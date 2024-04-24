@@ -26,17 +26,26 @@ body{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 .left-login > h1 {
-    font-size: 3vw;
+    font-size: 2vw;
+    margin-top: -20px;
     color: #4d691b
 }
 
 .left-login-image{
     width: 35vw;
+    margin-top: -30px;
 }
+
+.logo{
+    max-width: 200px;
+    height: auto;
+    margin-top: -30px; 
+    margin-bottom: 20px;
+} 
 
 .rigth-login{
     width: 50vw;
@@ -59,7 +68,7 @@ body{
 }
 .card-login > h1 {
     color: #4d691b;
-    font-weight: 800;
+    font-weight: 750;
     margin: 0;
 }
 
@@ -132,5 +141,8 @@ body{
 @media only screen and (max-width: 600px){
     .main-login{
         flex-direction: column;
+    }
+    .left-login > h2{
+        display: none;
     }
 }
