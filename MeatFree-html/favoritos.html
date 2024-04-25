@@ -16,6 +16,13 @@
         <button class="back-button">Voltar</button>
     </header>
 
+    <!-- Seletor de classificação -->
+    <select id="sort-select" class="sort-select" onchange="sortRecipes()">
+        <option value="name">Nome</option>
+        <option value="date">Data de Adição</option>
+        <option value="rating">Avaliação</option>
+    </select>
+
     <!-- Seção de receitas favoritas -->
     <section class="favorites-section">
         <!-- Exemplo de card de receita -->
@@ -25,7 +32,7 @@
             <p>Descrição curta da receita 1...</p>
             <button class="remove-favorite">Remover</button>
         </div>
-        <!-- Repita o card de receita para cada receita favorita -->
+        <!-- Um card de receita para cada receita favorita -->
         <div class="recipe-card">
             <img src="/Imagens/receita1.jpg" alt="Receita 2">
             <h3>Nome da Receita 2</h3>
