@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap'); 
+
+/* Cores já definidas
+.color1  background: #88b830; /* cor dos botões login/ 
+.color2  background: #dce494; /* cor dos elementos (raminhos)
+.color3  color: #4d691b; /* cor da logo e textos
+.color4  background: #8cb34e; /* cor dos demais botões e menu
+.color5  background: #c4d6a6; /* cor de fundo balões
+.color6  background: #eafacf; /* cor de fundo tela 
+*/
+body {
+    margin: 0;
+    font-family: 'Platypi', sans-serif;
+    background-color: #eafacf;
+}
+
+/* Estrutura principal da página de perfil */
+.perfil-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Cabeçalho da página */
+.perfil-header {
+    width: auto;
+    height: 100px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #dce494;
+}
+
+.perfil-header h1 {
+    margin-left: 20px;
+    font-weight: 700;
+    color: #4d691b;
+    margin: 0;
+
+}
+
+.logo{
+    max-width: 200px;
+    height: auto;
+    margin: 0 auto;
+} 
+
+/* Botão de voltar para a página anterior */
+.back-button {
+    margin-right: 10px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 550;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: #88b830;
+    color: black;
+    cursor: pointer;
+}
+
+/* Estilo do seletor de classificação */
+.main-perfil{
+    width: 100%;
+    padding: 1px 20px;
+    background-color: #eafacf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-perfil{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.left-perfil > h1 {
+    font-size: 2vw;
+    margin-top: -20px;
+    color: #4d691b
+}
+.logo{
+    max-width: 200px;
+    height: auto;
+    margin-top: -30px; 
+    margin-bottom: 20px;
+}
+.card-perfil{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 50px;
+    background: #dce494;
+    border-radius: 20px ;
+    box-shadow: 0px 10px 40px #4d691b;
+}
+.card-perfil > h1 {
+    color: #4d691b;
+    font-weight: 750;
+    margin: 0;
+    /* width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0; */
+} 
+.rigth-perfil{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rigth-perfil > h1{
+    color: #4d691b;
+    font-weight: 750;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    justify-content: center;
+}
+.right-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:baseline;
+}
+.submit-button{
+    width: 80%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: black;
+    background: #88b830;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #4d691b;
+}
+footer{
+    width: 100%;
+    padding: 20px 20px;
+    background: #c4d6a6;
+    color: black;
+    font-size: 9pt; 
+}
+footer p{
+    margin: 0;
+    text-align: center;
+    color: #4d691b;
+}
