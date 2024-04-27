@@ -7,8 +7,54 @@
     <link rel="stylesheet" href="/MeatFree-css/perfil-style.css">
     <link rel="shortcut icon" href="/Imagens/icon.ico" type="image/x-icon">
     <link rel="icon" href="/Imagens/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
+    <!-- Menu lateral -->
+    <nav class="menuLateral">
+        <div class="expandir">
+            <i class="icon" > <span class="material-icons">menu</span> </i> <!--icone de expansão do menu -->
+        </div>
+
+        <!-- adicionando os componentes do menu -->
+        <ul>
+            <li class="item-menu"> <!-- perfil -->
+                <a href="perfil.html"> 
+                    <span class="icon"> <span class="material-icons">person</span> </span> <!--será guardado o ícone de pessoa  -->
+                    <span class="txt-link"> Perfil </span>
+                </a>
+            </li>
+
+            <li class="item-menu"> <!-- menu -->
+                <a href="menu.html" > 
+                    <span class="icon"> <span class="material-icons">home</span> </span> <!--será guardado o ícone de menu  -->
+                    <span class="txt-link"> Menu </span>
+                </a>
+            </li>
+
+            <li class="item-menu"> <!-- receitas -->
+                <a href="minhasreceitas.html" > 
+                    <span class="icon"> <span class="material-icons">restaurant</span> </span> <!--será guardado o ícone de receitas  -->
+                    <span class="txt-link"> Receitas </span>
+                </a>
+            </li>
+
+            <li class="item-menu"> <!-- favoritos -->
+                <a href="favoritos.html" > 
+                    <span class="icon"> <span class="material-icons">favorite</span> </span> <!--será guardado o ícone de favoritos  -->
+                    <span class="txt-link"> Favoritos </span>
+                </a>
+            </li>
+
+            <li class="item-menu"> <!-- sair -->
+                <a href="login.html" > 
+                    <span class="icon"> <span class="material-icons">logout</span> </span> <!--será guardado o ícone logout  -->
+                    <span class="txt-link"> Sair </span>
+                </a>
+            </li>
+        </ul>
+
+    </nav>
     <header class="perfil-header">
         <h1>PERFIL</h1>
         <img src="/Imagens/logo.png" class="logo" alt="Logo">
@@ -19,25 +65,34 @@
         <!-- div da esquerda -->
         <div class="left-perfil">
             <div class="card-perfil">
-                <h2>Olá, eu sou a...</h2>
-                <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
-                <div class="text-field">
-                    <div class="favoritos-link">
-                        <a href="favoritos.html"> <span class="highlight">Favoritos</span> </a>
-                    </div>
-                </div>
+                <img src="/Imagens/Design sem nome (5).png" class="perfil-img" alt="Perfil">
+                <h2>Olá, eu sou a Agnes</h2>
+                <br>
+                <p>Me acompanhe também pelo<br>insta:<br>face:<br>vsco:</p>
+                <br>
+                <button class="favoritos-button" type="submit"><a href="favoritos.html">Favoritos</span> </a></button>
+                <button class="editar-perfil-button" type="submit">Editar perfil</span> </a></button>
             </div>
         </div>
         <!-- div da direita -->
         <div class="rigth-perfil">
-            <h1>Sobre mim</h1>
-            <!-- texto do sobre mim e botao para minhas receitas -->
             <div class="right-content">
-            <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum</p>
-            <button class="submit-button" type="submit"><a href="minhas_receitas.html">Minhas receitas</button>
+                <h1>Sobre mim</h1>
+                <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                    Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum
+                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                    Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum
+                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                    Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum
+                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                    Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum</p>
+                <button class="receitas-button" type="submit"><a href="minhas_receitas.html">Minhas receitas</a></button>
             </div>
         </div>
     </div>
+    <footer>
+        <p>Desenvolvido por Ana Beatriz Maciel, Brenda Beatriz Cristaldo e Thaisse Kirian Veiga.
+            Alunas de Engenharia de Software na UTFPR-CP - 2024</p>
+    </footer> 
 </body>
 </html>
