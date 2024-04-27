@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap'); 
 body{
     margin:0;
-    font-family: 'Noto-Sans', sans-serif;
+    font-family: 'Platypi', sans-serif;
     width: 97%;
+    background-color: #eafacf;
 }
  /*Cores usadas
         .color1 { #88b830 cor dos botoes login/cadastro};
@@ -29,11 +30,15 @@ body{
     align-items: center;
 }
 .left-cadastro > h1 {
-    font-size: 2vw;
+    font-size:17pt;
     margin-top: -20px;
     color: #4d691b
 }
-
+.left-cadastro > p {
+    font-size: 12pt;
+    color: #4d691b;
+    margin-top: -5px;
+}   
 .left-login-image{
     width: 35vw;
     margin-top: -30px;
@@ -42,8 +47,7 @@ body{
 .logo{
     max-width: 200px;
     height: auto;
-    margin-top: -30px; 
-    margin-bottom: 20px;
+    margin-top: -30px;
 } 
 
 .rigth-cadastro{
@@ -60,7 +64,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 15px 15px;
+    padding: 5px 15px;
     background: #dce494;
     border-radius: 20px ;
     box-shadow: 0px 10px 40px #4d691b;
