@@ -74,6 +74,7 @@ body {
     background-color: #c4d6a6;
     font-family: 'Platypi', sans-serif;
     color: black;
+    cursor: pointer;
 }
 
 /* Estilo das opções do seletor de classificação */

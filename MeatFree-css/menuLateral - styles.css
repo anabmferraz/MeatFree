@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap'); 
+
+/* Cores já definidas
+.color1  background: #88b830; /* cor dos botões login/cadastro
+.color2  background: #dce494; /* cor dos elementos (raminhos)
+.color3  color: #4d691b; /* cor da cards
+.color4  background: #8cb34e; /* cor dos demais botões e menu
+.color5  background: #c4d6a6; /* cor de fundo balões
+.color6  background: #eafacf; /* cor de fundo tela 
+*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Platypi', sans-serif;
+}
+
+body{
+    height: 120vh;
+}
+
+nav.menuLateral{
+    width: 50px;
+    height: 100%;
+    background-color: #4d691b;
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0 0 #c4d6a6;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .5;
+}
+
+/* ficar apenas na lateral e fazer o movimento de expandir */
+nav.menuLateral:hover{
+    width: 300px;
+
+}
+
+/* simbolo de expandir */
+.expandir{
+    width: 100%;
+    padding-left: 5px;
+
+}
+.expandir > i{
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+ul{
+    height: 100%;
+    list-style-type: none;
+
+}
+
+/* transição de corzinha */
+ul li.item-menu:hover{
+    background-color: #c4d6a6;
+}
+ul li.item-menu{
+    transition: 1s;
+}
+
+/* demais simbolos do menu */
+ul li.item-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 30px;
+
+}
+ul li.item-menu a .txt-link{
+    margin-left: 35px;
+}
+ul li.item-menu a .icon > span{
+    font-size: 30px;
+
+}
