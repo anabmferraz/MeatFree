@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meat Free - Minhas receitas</title>
+    <link rel="stylesheet" href="/MeatFree-css/minhasreceitas-style.css">
+    <link rel="shortcut icon" href="/Imagens/icon.ico" type="image/x-icon">
+    <link rel="icon" href="/Imagens/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <!-- Menu lateral -->
+    <nav class="menuLateral">
+        <div class="expandir">
+            <i class="icon" > <span class="material-icons">menu</span> </i> <!--icone de expansão do menu -->
+        </div>
+
+        <!-- adicionando os componentes do menu -->
+        <ul>
+            <li class="item-menu"> <!-- perfil -->
+                <a href="perfil.html"> 
+                    <span class="icon"> <span class="material-icons">person</span> </span> <!--será guardado o ícone de pessoa  -->
+                    <span class="txt-link"> Perfil </span>
+                </a>
+            </li>
+
+            <li class="item-menu"> <!-- menu -->
+                <a href="menu.html" > 
+                    <span class="icon"> <span class="material-icons">home</span> </span> <!--será guardado o ícone de menu  -->
+                    <span class="txt-link"> Menu </span>
+                </a>
+            </li>
+
+            <li class="item-menu"> <!-- receitas -->
+                <a href="minhasreceitas.html" > 
+                    <span class="icon"> <span class="material-icons">restaurant</span> </span> <!--será guardado o ícone de receitas  -->
+                    <span class="txt-link"> Receitas </span>
+                </a>
+            </li>
+
+            <li class="item-menu"> <!-- favoritos -->
+                <a href="favoritos.html" > 
+                    <span class="icon"> <span class="material-icons">favorite</span> </span> <!--será guardado o ícone de favoritos  -->
+                    <span class="txt-link"> Favoritos </span>
+                </a>
+            </li>
+
+            <li class="item-menu"> <!-- sair -->
+                <a href="login.html" > 
+                    <span class="icon"> <span class="material-icons">logout</span> </span> <!--será guardado o ícone logout  -->
+                    <span class="txt-link"> Sair </span>
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+
+    <!-- Cabeçalho da página de minhas receitas -->
+    <header class="minhas_receitas-header">
+        <h1>MINHAS RECEITAS</h1>
+        <img src="/Imagens/logo.png" class="logo" alt="Logo">
+    </header>
+
+    <!-- Seletor de classificação -->
+    <select id="sort-select" class="sort-select" onchange="sortRecipes()">
+        <option value="name">Nome</option>
+        <option value="date">Data de Adição</option>
+        <option value="rating">Avaliação</option>
+    </select>
+
+    <!-- Seção de receitas favoritas -->
+    <section class="minhas_receitas-section">
+        <!-- Exemplo de card de receita -->
+        <div class="recipe-card">
+            <img src="/Imagens/receita1.jpg" alt="Receita 1">
+            <h3>Nome da Receita 1</h3>
+            <p>Descrição curta da receita 1...</p>
+            <button class="remove-favorite">Remover</button>
+        </div>
+        <!-- Um card de receita para cada receita favorita -->
+        <div class="recipe-card">
+            <img src="/Imagens/receita1.jpg" alt="Receita 2">
+            <h3>Nome da Receita 2</h3>
+            <p>Descrição curta da receita 2...</p>
+            <button class="remove-favorite">Remover</button>
+        </div>
+        <div class="recipe-card">
+            <img src="/Imagens/receita1.jpg" alt="Receita 3">
+            <h3>Nome da Receita 3</h3>
+            <p>Descrição curta da receita 3...</p>
+            <button class="remove-favorite">Remover</button>
+        </div>
+        <div class="recipe-card">
+            <img src="/Imagens/receita1.jpg" alt="Receita 4">
+            <h3>Nome da Receita 4</h3>
+            <p>Descrição curta da receita 4...</p>
+            <button class="remove-favorite">Remover</button>
+        </div>
+    </section>
+    
+    <footer>
+        <p>Desenvolvido por Ana Beatriz Maciel, Brenda Beatriz Cristaldo e Thaisse Kirian Veiga.
+            Alunas de Engenharia de Software na UTFPR-CP - 2024</p>
+    </footer>   
+</body>
+</html>
