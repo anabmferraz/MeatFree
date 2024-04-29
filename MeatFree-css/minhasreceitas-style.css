@@ -102,7 +102,7 @@ body {
     background-color: #88b830;
     color: black;
     cursor: pointer;
-    margin: 10px 200px;
+    margin: 10px 165px;
 }
 .remove-favorite:hover {
     background-color: #6f9e31; /* Mudar a cor de fundo ao passar o mouse */
