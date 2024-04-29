@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/MeatFree-css/cadastro-style.css">
+    <link rel="shortcut icon" href="/Imagens/icon.ico" type="image/x-icon">
+    <link rel="icon" href="/Imagens/icon.ico" type="image/x-icon">
+    <title>Meat Free - Cadastro</title>
+</head>
+<body>
+    <!-- div principal -->
+    <div class="main-cadastro"> 
+        <!-- div da esquerda -->
+        <div class="left-cadastro">
+            <img src="/Imagens/logo.png" class="logo" alt="Logo">
+            <h1> Preencha os campos ao lado e cadastre-se!</h1>
+            <p>Se você já possui uma conta, clique <a href="login.html">aqui</a> para fazer login.</p>
+            <img src="/Imagens/Animação-Login.svg" class="left-login-image" alt="Veg">
+        </div>
+        
+        <!-- div da direita -->
+        <div class="rigth-cadastro">
+            <!-- div para o card do formulário -->
+            <div class="card-cadastro">
+                <!--Adicionando a tag form-->
+                <form action="seu_script_de_processamento.php" method="post" id="cadastro-form">
+                    <!-- div com label e input -->
+                    <div class="inputBox">
+                        <label for="nome">Nome completo:</label>
+                        <input type="text" name="nome" id="nome" placeholder="Ex: Agnes Beatriz Cardoso" required>
+                    </div>
+                    <div class="inputBox">
+                        <label for="email">E-mail:</label>
+                        <input type="text" name="email" id="email" placeholder="Ex: abc@email.com" required>
+                    </div>
+                    <div class="inputBox"> 
+                        <label for="senha">Senha:</label>
+                        <input type="text" name="senha" id="senha" placeholder="Insira a senha" required>
+                    </div>
+                    <div class="inputBox"> 
+                        <label for="confirmarSenha">Confirmar senha:</label>
+                        <input type="text" name="confirmarSenha" id="confirmarSenha" placeholder="Repita sua senha" required>
+                    </div>
+                    <div class="error-message">
+                        <p>Sua senha deve conter:</p>
+                        <ul>
+                            <li>Pelo menos 8 caracteres</li>
+                            <li>1 letra maiúscula</li>
+                            <li>1 letra minúscula</li>
+                            <li>1 número</li>
+                        </ul>
+                    </div>
+                    <div class="inputBox">
+                        <label for="dataNascimento">Data de nascimento:</label>
+                        <input type="date" name="dataNascimento" id="dataNascimento" required>
+                    </div>
+                    <button class="submit-button" type="submit"><a href="login.html"></a>Cadastrar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Desenvolvido por Ana Beatriz Maciel, Brenda Beatriz Cristaldo e Thaisse Kirian Veiga.
+            Alunas de Engenharia de Software na UTFPR-CP - 2024</p>
+    </footer>        
+</body>
+</html>

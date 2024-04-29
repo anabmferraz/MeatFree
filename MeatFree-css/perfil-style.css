@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap'); 
+
+/* Cores já definidas
+.color1  background: #88b830; /* cor dos botões login/ 
+.color2  background: #dce494; /* cor dos elementos (raminhos)
+.color3  color: #4d691b; /* cor da logo e textos
+.color4  background: #8cb34e; /* cor dos demais botões e menu
+.color5  background: #c4d6a6; /* cor de fundo balões
+.color6  background: #eafacf; /* cor de fundo tela 
+*/
+body {
+    width: 92%;
+    margin-left:55px;
+    font-family: 'Platypi', sans-serif;
+    background-color: #eafacf;
+    padding-bottom:10px;
+}
+/* Cabeçalho da página */
+.perfil-header {
+    width: 101%;
+    height: 100px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dce494;
+}
+.perfil-header h1 {
+    margin-left:20px;
+    font-weight: 700;
+    color: #4d691b;
+}
+.logo{
+    max-width: 200px;
+    padding-top: 50px;
+    height: auto;
+    margin: 0 auto;
+}
+.perfil-img {
+    max-width: 200px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 50%; /* Torna a imagem de perfil circular */
+}
+/* Estilo do seletor de classificação */
+.main-perfil {
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    background-color: #eafacf;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+}
+.left-perfil {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 215px; /* Adiciona margem à esquerda */
+}
+.left-perfil > h1 {
+    font-size: 2vw;
+    margin-top: -20px;
+    color: #4d691b
+}
+.logo{
+    max-width: 200px;
+    height: auto;
+    margin-top: -30px; 
+    margin-bottom: 20px;
+}
+.card-perfil {
+    width: 120%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px;
+    background: #dce494;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #4d691b;
+}
+.card-perfil > h2 {
+    font-weight: 750;
+    margin: 0;
+}
+.card-perfil > p {
+    margin: 0;
+}
+.rigth-perfil {
+    width: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 70px;
+}
+.right-content {
+    width: 50%; /* Ajusta a largura conforme necessário */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.right-content > p{
+    margin: 0;
+    width: 150%;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+.favoritos-button {
+    margin: 10px;
+    padding: 16px 23px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 550;
+    background-color: #88b830;
+    color: black;
+    cursor: pointer;
+}
+.editar-perfil-button {
+    margin: 10px;
+    padding: 16px;
+    border: none;
+    border-radius: 8px; 
+    font-weight: 550;
+    background-color: #88b830;
+    color: black;
+    cursor: pointer;
+}
+.receitas-button {
+    margin-top: 50px;
+    padding: 16px;
+    border: none;
+    border-radius: 8px; 
+    font-weight: 550;
+    background-color: #88b830;
+    color: black;
+    cursor: pointer;
+}
+footer{
+    width: 101%;
+    padding: 20px 20px;
+    background: #c4d6a6;
+    color: black;
+    font-size: 9pt;
+}
+footer p{
+    margin: 0;
+    text-align: center;
+    color: #4d691b;
+}
+
+/* menu lateral */
+@import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap'); 
+
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Platypi', sans-serif;
+    }
+
+    body{
+        height: 120vh;
+    }
+
+nav.menuLateral{
+    width: 50px;
+    height: 100%;
+    background-color: #4d691b;
+    padding: 40px 0 40px 1%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .5;
+}
+/* ficar apenas na lateral e fazer o movimento de expandir */
+nav.menuLateral:hover{
+    width: 300px;
+
+}
+/* simbolo de expandir */
+.expandir{
+    width: 100%;
+    padding-left: 5px;
+
+}
+.expandir > i{
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+ul{
+    height: 100%;
+    list-style-type: none;
+
+}
+
+/* transição de corzinha */
+ul li.item-menu:hover{
+    background-color: #c4d6a6;
+}
+ul li.item-menu{
+    transition: 1s;
+}
+
+/* demais simbolos do menu */
+ul li.item-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 30px;
+
+}
+ul li.item-menu a .txt-link{
+    margin-left: 35px;
+}
+ul li.item-menu a .icon > span{
+    font-size: 30px;
+
+}
