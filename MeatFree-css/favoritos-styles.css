@@ -9,22 +9,16 @@
 .color6  background: #eafacf; /* cor de fundo tela 
 */
 body {
-    margin: 0;
+    width: 92%;
+    margin-left:55px;
     font-family: 'Platypi', sans-serif;
     background-color: #eafacf;
-}
-
-/* Estrutura principal da página de favoritos */
-.favorites-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+    padding-bottom:10px;
 }
 
 /* Cabeçalho da página */
 .favorites-header {
-    width: auto;
+    width: 101%;
     height: 100px;
     padding: 20px;
     display: flex;
@@ -35,38 +29,24 @@ body {
 }
 
 .favorites-header h1 {
-    margin-left: 20px;
+    margin-left:20px;
     font-weight: 700;
     color: #4d691b;
-    margin: 0;
 
 }
 
 .logo{
     max-width: 200px;
     height: auto;
-    margin: 0 auto;
+    margin-left: auto;
 } 
 
-/* Botão de voltar para a página anterior */
-.back-button {
-    margin-right: 10px;
-    padding: 10px 30px;
-    border: none;
-    border-radius: 8px;
-    font-weight: 550;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    background-color: #88b830;
-    color: black;
-    cursor: pointer;
-}
 
 /* Estilo do seletor de classificação */
 .sort-select {
     margin-bottom: 20px;
     margin-top: 15px;
-    margin-left: 20px;
+    margin-left: 50px;
     font-size: 17px;
     padding: 15px 20px;
     border-radius: 8px;
@@ -91,6 +71,8 @@ body {
     gap: 20px;
     padding: 20px;
     justify-content: center;
+    padding-bottom:26%;
+    padding-left: 50px;
 }
 
 /* Card de receita individual */
@@ -124,12 +106,16 @@ body {
     padding: 10px 15px;
     border: none;
     border-radius: 8px;
-    font-weight: 550;
+    font-weight: 600px;
     letter-spacing: 1px;
     background-color: #88b830;
     color: black;
     cursor: pointer;
-    margin: 10px;
+    margin: 10px 200px;
+}
+.remove-favorite:hover {
+    background-color: #6f9e31; /* Mudar a cor de fundo ao passar o mouse */
+    transition: background-color 0.3s ease; /* Adicionar uma transição suave */
 }
 
 /* Para telas menores que 600px */
@@ -152,6 +138,19 @@ body {
     }
 }
 
+footer{
+    width: 101%;
+    padding: 20px 20px;
+    background: #c4d6a6;
+    color: black;
+    font-size: 9pt;
+}
+footer p{
+    margin: 0;
+    text-align: center;
+    color: #4d691b;
+}
+
 /* Para telas menores que 400px */
 @media only screen and (max-width: 400px) {
     .favorites-header {
@@ -167,3 +166,5 @@ body {
         padding: 8px 16px; /* Reduz ainda mais o tamanho do botão Voltar */
     }
 }
+
+
