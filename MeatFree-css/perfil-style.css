@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap'); 
 
-/* paleta de cores
+/* Cores já definidas
 .color1  background: #88b830; /* cor dos botões login/ 
 .color2  background: #dce494; /* cor dos elementos (raminhos)
 .color3  color: #4d691b; /* cor da logo e textos
@@ -41,19 +41,6 @@ body {
     height: auto;
     margin: 0 auto;
     border-radius: 50%; /* Torna a imagem de perfil circular */
-}
-/* Botão de voltar para a página anterior */
-.back-button {
-    margin-right: 10px;
-    padding: 10px 30px;
-    border: none;
-    border-radius: 8px;
-    font-weight: 550;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    background-color: #88b830;
-    color: black;
-    cursor: pointer;
 }
 /* Estilo do seletor de classificação */
 .main-perfil {
