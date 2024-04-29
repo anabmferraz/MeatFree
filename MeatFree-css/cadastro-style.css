@@ -34,7 +34,7 @@ body{
     margin-top: -20px;
     color: #4d691b
 }
-.left-cadastro > p {
+.left-cadastro > h3 {
     font-size: 12pt;
     color: #4d691b;
     margin-top: -5px;
@@ -133,7 +133,7 @@ body{
 .register-link a:hover {
     text-decoration: underline; /* Adiciona sublinhado ao passar o mouse sobre o link */
 }
-.register-link .highlight{
+.highlight{
     font-weight: bold;
     color: #88b830;
     font-size: 1.2em;
