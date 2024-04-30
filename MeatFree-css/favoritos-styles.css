@@ -110,7 +110,7 @@ body {
     background-color: #88b830;
     color: black;
     cursor: pointer;
-    margin: 10px 200px;
+    margin: 10px 165px;
 }
 .remove-favorite:hover {
     background-color: #6f9e31; /* Mudar a cor de fundo ao passar o mouse */
@@ -164,10 +164,4 @@ footer p{
     .back-button {
         padding: 8px 16px; /* Reduz ainda mais o tamanho do botão Voltar */
     }
-<<<<<<< HEAD
 }
-=======
-}
-
-
->>>>>>> 681884f49369efb272ca7cec3a183b94717eaf7d
