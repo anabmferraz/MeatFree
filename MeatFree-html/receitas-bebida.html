@@ -1,16 +1,19 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meat Free - Minhas receitas</title>
-    <link rel="stylesheet" href="/MeatFree-css/minhasreceitas-style.css">
-    <link rel="stylesheet" href="/MeatFree-css/menuLateral - styles.css">
+    <title>Receitas - MilkShake de Banana</title>
 
-    <link rel="shortcut icon" href="/Imagens/icon.ico" type="image/x-icon">
-    <link rel="icon" href="/Imagens/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/MeatFree-css/receitaBebida-style.css"> <!--link para o css de receitas-->
+    <link rel="stylesheet" href="/MeatFree-css/menuLateral - styles.css"> <!--link para o css de menu-->
+
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    
+    <link rel="shortcut icon" href="/Imagens/icon.ico" type="image/x-icon"> <!--iconizinho meat free -->
+    <link rel="icon" href="/Imagens/icon.ico" type="image/x-icon">
 </head>
 <body>
     <!-- Menu lateral -->
@@ -36,7 +39,7 @@
             </li>
 
             <li class="item-menu"> <!-- receitas -->
-                <a href="minhasreceitas.html" > 
+                <a href="/MeatFree-html/receitas-principal.html" > 
                     <span class="icon"> <span class="material-icons">restaurant</span> </span> <!--será guardado o ícone de receitas  -->
                     <span class="txt-link"> Receitas </span>
                 </a>
@@ -59,54 +62,49 @@
 
     </nav>
 
-    <!-- Cabeçalho da página de minhas receitas -->
-    <header class="minhas_receitas-header">
-        <h1>MINHAS RECEITAS</h1>
+    <!-- Cabeçalho da página de Receitas com logo-->
+    <header class="bebida-header">
+        <h1>RECEITAS</h1>
         <img src="/Imagens/logo.png" class="logo" alt="Logo">
     </header>
 
-    <!-- Seletor de classificação -->
-    <select id="sort-select" class="sort-select" onchange="sortRecipes()">
-        <option value="name">Nome</option>
-        <option value="date">Data de Adição</option>
-        <option value="rating">Avaliação</option>
-    </select>
+    <!-- div principal -->
+    <div class="main-perfil"> 
+        <!-- div da esquerda -->
+        <div class="left-perfil">
+            <div class="card-perfil">
+                <img src="/Imagens/MilkShake de Banana.jpg" class="bebida-img" alt="Perfil">
+                <h2>MilkShake de Banana com Cacau</h2>
+                <br>
+                <h3>DESCRIÇÃO</h3>
+                <br>
+                <p>DESCRIÇÃO DA RECEITA AQUI</p>
+                <br>
+            </div>
+        </div>
+        <!-- div da direita -->
+        <div class="rigth-perfil">
+            <div class="right-content">
+                <h1>Sobre mim</h1>
+                <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                    Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum
+                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                    Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum
+                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                    Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum
+                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                    Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum</p>
+                <button class="receitas-button" type="submit"><a href="minhas_receitas.html">Minhas receitas</a></button>
+            </div>
+        </div>
+    </div>
 
-    <!-- Seção de receitas favoritas -->
-    <section class="minhas_receitas-section">
-        <!-- Exemplo de card de receita -->
-        <div class="recipe-card">
-            <img src="/Imagens/receita1.jpg" alt="Receita 1">
-            <h3>Nome da Receita 1</h3>
-            <p>Descrição curta da receita 1...</p>
-            <button class="remove-favorite">Remover</button>
-        </div>
-        <!-- Um card de receita para cada receita favorita -->
-        <div class="recipe-card">
-            <img src="/Imagens/receita1.jpg" alt="Receita 2">
-            <h3>Nome da Receita 2</h3>
-            <p>Descrição curta da receita 2...</p>
-            <button class="remove-favorite">Remover</button>
-        </div>
-        <div class="recipe-card">
-            <img src="/Imagens/receita1.jpg" alt="Receita 3">
-            <h3>Nome da Receita 3</h3>
-            <p>Descrição curta da receita 3...</p>
-            <button class="remove-favorite">Remover</button>
-        </div>
-        <div class="recipe-card">
-            <img src="/Imagens/receita1.jpg" alt="Receita 4">
-            <h3>Nome da Receita 4</h3>
-            <p>Descrição curta da receita 4...</p>
-            <button class="remove-favorite">Remover</button>
-        </div>
-    </section>
-    
-    <footer>
+
+
+
+    <!-- <footer>
         <p>Desenvolvido por Ana Beatriz Maciel, Brenda Beatriz Cristaldo e Thaisse Kirian Veiga.
             Alunas de Engenharia de Software na UTFPR-CP - 2024</p>
-    </footer>   
+    </footer>   -->
 </body>
 </html>
-
-   
