@@ -31,11 +31,10 @@ body {
     color: #4d691b;
 }
 .logo{
-    padding-top: 50px;
     max-width: 200px;
     height: auto;
     margin-left: auto;
-}
+} 
 .perfil-img {
     max-width: 200px;
     height: auto;
@@ -66,12 +65,7 @@ body {
     margin-top: -20px;
     color: #4d691b
 }
-.logo{
-    max-width: 200px;
-    height: auto;
-    margin-top: -30px; 
-    margin-bottom: 20px;
-}
+
 .card-perfil {
     width: 120%;
     height: 100%;
