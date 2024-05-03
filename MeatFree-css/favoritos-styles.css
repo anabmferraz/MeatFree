@@ -83,9 +83,11 @@ body {
 }
 
 .recipe-card img {
-    width: 100%;
+    width: 100px;
     height: auto;
     display: block;
+    border-radius: 40%;
+    
 }
 
 .recipe-card h3 {

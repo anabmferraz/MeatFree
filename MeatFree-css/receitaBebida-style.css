@@ -93,6 +93,31 @@ body {
     margin: 0;
     text-align: center;
 }
+.interactions {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.material-icons {
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+.comment-icon {
+    color: #4d691b;
+}
+
+.like-icon {
+    color: #4d691b;
+}
+
+.comments,
+.likes {
+    font-size: 16px;
+    color: #4d691b;
+    margin-right: 20px;
+}
 
 .modopreparo{
     width: 100%;
@@ -139,6 +164,7 @@ body {
 .ingredientes> h1 {
     font-size: 2vw;
     margin-top: -20px;
+    margin-bottom: 20px;
     color: #4d691b
 }
 .ingredientes> ul{
@@ -149,6 +175,10 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    list-style-type: disc;
+}
+.ingredientes > ul > li {
+    margin-bottom: 10px; /* Espaçamento entre os itens da lista */
 }
 
 .dicas{
@@ -158,12 +188,12 @@ body {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    margin-top: 50px;
     margin-right: 10px;
 }
 .dicas> h1 {
     font-size: 2vw;
     margin-top: -20px;
+    margin-bottom: 20px;
     color: #4d691b
 }
 .dicas> p{
