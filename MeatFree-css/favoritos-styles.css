@@ -110,6 +110,22 @@ body {
   transition: background-color 0.3s ease; /* Adicionar uma transição suave */
 }
 
+footer{
+  width: 102%;
+  margin: 50px 0 -50px 0;
+  bottom: 0;
+  padding: 20px;
+  background: #c4d6a6;
+  color: black;
+  font-size: 9pt;
+  bottom: 0;
+}
+footer p{
+  margin: 0;
+  text-align: center;
+  color: #4d691b;
+}
+
 /* Para telas menores que 600px */
 @media only screen and (max-width: 600px) {
   .favorites-header {
@@ -149,18 +165,12 @@ body {
   }
 }
 
-footer{
-  width: 102%;
-  margin: 50px 0 -50px 0;
-  bottom: 0;
-  padding: 20px;
-  background: #c4d6a6;
-  color: black;
-  font-size: 9pt;
-  bottom: 0;
-}
-footer p{
-  margin: 0;
-  text-align: center;
-  color: #4d691b;
+@media only screen and (min-width: 1024px) {
+  .left-cadastro,
+  .rigth-cadastro {
+      width: 100%;
+  }
+  .left-login-image {
+      margin-top: -45px;
+  }
 }
