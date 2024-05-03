@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap'); 
+@import url("https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap");
 
 /* Cores já definidas
 .color1  background: #88b830; /* cor dos botões login/cadastro
@@ -9,61 +9,60 @@
 .color6  background: #eafacf; /* cor de fundo tela 
 */
 body {
-    width: 92%;
-    margin-left:55px;
-    font-family: 'Platypi', sans-serif;
-    background-color: #eafacf;
-    padding-bottom:10px;
+  width: 92%;
+  margin-left: 55px;
+  font-family: "Platypi", sans-serif;
+  background-color: #eafacf;
+  padding-bottom: 10px;
+  overflow-x: hidden;
 }
 
 /* Cabeçalho da página */
 .receitas-header {
-    width: 101%;
-    height: 100px;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    background-color: #dce494;
+  width: 103%;
+  height: 100px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #dce494;
 }
 .receitas-header h1 {
-    margin-left:20px;
-    font-weight: 700;
-    color: #4d691b;
-
+  margin-left: 20px;
+  font-weight: 700;
+  color: #4d691b;
 }
 
-.logo{
-    max-width: 200px;
-    height: auto;
-    margin-left: auto;
-} 
+.logo {
+  max-width: 200px;
+  height: auto;
+  margin-left: auto;
+}
 
 .sort-select {
-    margin-bottom: 20px;
-    margin-top: 15px;
-    margin-left: 50px;
-    font-size: 17px;
-    padding: 15px 20px;
-    border-radius: 8px;
-    border: none;
-    background-color: #c4d6a6;
-    font-family: 'Platypi', sans-serif;
-    color: black;
-    cursor: pointer;
+  margin-bottom: 20px;
+  margin-top: 15px;
+  margin-left: 50px;
+  font-size: 17px;
+  padding: 15px 20px;
+  border-radius: 8px;
+  border: none;
+  background-color: #c4d6a6;
+  font-family: "Platypi", sans-serif;
+  color: black;
+  cursor: pointer;
 }
 
-
-footer{
-    width: 101%;
-    padding: 20px 20px;
-    background: #c4d6a6;
-    color: black;
-    font-size: 9pt;
+footer {
+  width: 101%;
+  padding: 20px 20px;
+  background: #c4d6a6;
+  color: black;
+  font-size: 9pt;
 }
-footer p{
-    margin: 0;
-    text-align: center;
-    color: #4d691b;
+footer p {
+  margin: 0;
+  text-align: center;
+  color: #4d691b;
 }

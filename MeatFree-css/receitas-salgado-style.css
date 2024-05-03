@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap'); 
+@import url("https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap");
 
 /* Cores já definidas
 .color1  background: #88b830; /* cor dos botões login/ 
@@ -9,182 +9,183 @@
 .color6  background: #eafacf; /* cor de fundo tela 
 */
 body {
-    width: 92%;
-    margin-left:55px;
-    font-family: 'Platypi', sans-serif;
-    background-color: #eafacf;
-    padding-bottom:10px;
+  width: 92%;
+  margin-left: 55px;
+  font-family: "Platypi", sans-serif;
+  background-color: #eafacf;
+  padding-bottom: 10px;
+  overflow-x: hidden;
 }
 /* Cabeçalho da página */
 .salgado-header {
-    width: 101%;
-    height: 100px;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #dce494;
+  width: 103%;
+  height: 100px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dce494;
 }
 .salgado-header h1 {
-    margin-left:20px;
-    font-weight: 700px;
-    color: #4d691b;
+  margin-left: 20px;
+  font-weight: 700px;
+  color: #4d691b;
 }
-.logo{
-    max-width: 200px;
-    height: auto;
-    margin-left: auto;
-} 
+.logo {
+  max-width: 200px;
+  height: auto;
+  margin-left: auto;
+}
 .salgado-img {
-    max-width: 200px;
-    height: auto;
-    margin: 0 auto;
-    border-radius: 50%; /* Torna a imagem de perfil circular */
+  max-width: 200px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 50%; /* Torna a imagem de perfil circular */
 }
 /* Estilo do seletor de classificação */
 .main-receita {
-    width: 100%;
-    height: auto;
-    padding: 20px;
-    background-color: #eafacf;
-    display: flex;
-    justify-content: center;
-    align-items: center; /* Centraliza o conteúdo verticalmente */
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  background-color: #eafacf;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Centraliza o conteúdo verticalmente */
 }
 .left-salgado {
-    width: 50%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    margin-left: 215px; /* Adiciona margem à esquerda */
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 215px; /* Adiciona margem à esquerda */
 }
 .left-salgado > h1 {
-    font-size: 2vw;
-    margin-top: -20px;
-    color: #4d691b
+  font-size: 2vw;
+  margin-top: -20px;
+  color: #4d691b;
 }
 .card-descricao {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 20px;
-    background: #dce494;
-    border-radius: 20px;
-    box-shadow: 0px 10px 40px #4d691b;
-    margin-top: 10px;
-    margin-right: 200px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  background: #dce494;
+  border-radius: 20px;
+  box-shadow: 0px 10px 40px #4d691b;
+  margin-top: 10px;
+  margin-right: 200px;
 }
 .card-descricao > h2 {
-    font-weight: 750;
-    margin: 0;
+  font-weight: 750;
+  margin: 0;
 }
 .card-descricao > h3 {
-    font-weight: 750;
-    margin: 0;
-    color: #4d691b
+  font-weight: 750;
+  margin: 0;
+  color: #4d691b;
 }
 .card-descricao > p {
-    margin: 0;
-    text-align: center;
+  margin: 0;
+  text-align: center;
 }
 .interactions {
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
 }
 
 .material-icons {
-    font-size: 24px;
-    margin-right: 5px;
+  font-size: 24px;
+  margin-right: 5px;
 }
 
 .comment-icon {
-    color: #4d691b;
+  color: #4d691b;
 }
 
 .like-icon {
-    color: #4d691b;
+  color: #4d691b;
 }
 
 .comments,
 .likes {
-    font-size: 16px;
-    color: #4d691b;
-    margin-right: 20px;
+  font-size: 16px;
+  color: #4d691b;
+  margin-right: 20px;
 }
-.modopreparo{
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 30px;
-    margin-top: 50px;
-    margin-right: 200px;
+.modopreparo {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 30px;
+  margin-top: 50px;
+  margin-right: 200px;
 }
-.modopreparo> h1 {
-    font-size: 2vw;
-    margin-top: -20px;
-    color: #4d691b
+.modopreparo > h1 {
+  font-size: 2vw;
+  margin-top: -20px;
+  color: #4d691b;
 }
-.modopreparo> p {
-    margin: 0;
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.modopreparo > p {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .rigth-salgado {
-    width: 50%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: auto;
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
 }
-.ingredientes{
-    width: 100%; /* Ajusta a largura conforme necessário */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 30px;
-    margin-bottom: 621px;
-    margin-right: 10px;
+.ingredientes {
+  width: 100%; /* Ajusta a largura conforme necessário */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 30px;
+  margin-bottom: 621px;
+  margin-right: 10px;
 }
-.ingredientes> h1 {
-    font-size: 2vw;
-    margin-top: -20px;
-    margin-bottom: 20px;
-    color: #4d691b
+.ingredientes > h1 {
+  font-size: 2vw;
+  margin-top: -20px;
+  margin-bottom: 20px;
+  color: #4d691b;
 }
-.ingredientes> ul{
-    margin: 0;
-    width: 150%;
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    list-style-type: disc;
+.ingredientes > ul {
+  margin: 0;
+  width: 150%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  list-style-type: disc;
 }
-footer{
-    width: 101%;
-    padding: 20px 20px;
-    background: #c4d6a6;
-    color: black;
-    font-size: 9pt;
+footer {
+  width: 101%;
+  padding: 20px 20px;
+  background: #c4d6a6;
+  color: black;
+  font-size: 9pt;
 }
-footer p{
-    margin: 0;
-    text-align: center;
-    color: #4d691b;
+footer p {
+  margin: 0;
+  text-align: center;
+  color: #4d691b;
 }
