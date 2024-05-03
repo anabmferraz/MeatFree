@@ -143,6 +143,14 @@ body{
     color: #88b830;
     font-size: 1.2em;
 }
+@media only screen and (max-width: 950px){
+    .card-cadastro{
+        width: 80%;
+    }
+    .main-cadastro{
+        flex-direction: column;
+    }
+}
 footer{
     width: 100%;
     padding: 20px 20px;
@@ -155,12 +163,3 @@ footer p{
     text-align: center;
     color: #4d691b;
 }
-@media only screen and (max-width: 950px){
-    .card-cadastro{
-        width: 80%;
-    }
-    .main-cadastro{
-        flex-direction: column;
-    }
-}
-
