@@ -18,16 +18,8 @@ body {
   align-items: center;
   background-color: #dce494;
 }
-  .minhas_receitas-header h1 {
-    margin-left: 100px;
-    font-weight: 700;
-    color: #4d691b;
-  }
-  .logo {
-    max-width: 200px;
-    height: auto;
-    margin-left: auto;
-  }
+.minhas_receitas-header h1 {
+  margin-left: 20px;
   font-weight: 700;
   color: #4d691b;
 }
@@ -148,15 +140,17 @@ body {
     padding: 8px 16px; /* Reduz ainda mais o tamanho do botão Voltar */
   }
 }
-footer {
-  width: 101%;
-  padding: 20px 20px;
+footer{
+  width: 102%;
+  margin: 50px 0 -50px 0;
+  bottom: 0;
+  padding: 20px;
   background: #c4d6a6;
   color: black;
   font-size: 9pt;
   bottom: 0;
 }
-footer p {
+footer p{
   margin: 0;
   text-align: center;
   color: #4d691b;

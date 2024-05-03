@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap'); 
-
 body {
     width: 92%;
-    margin-left:55px;
-    font-family: 'Platypi', sans-serif;
+    margin-left: 55px;
+    font-family: "Platypi", sans-serif;
     background-color: #eafacf;
-    padding-bottom:10px;
-}
+    padding-bottom: 10px;
+    overflow-x: hidden;
+  }
 /* Cabeçalho da página */
 .perfil-header {
-    width: 101%;
+    width: 103%;
     height: 100px;
     padding: 20px;
     display: flex;
@@ -95,6 +95,7 @@ body {
 }
 .right-content > p{
     margin: 0;
+    text-align: justify;
     width: 150%;
     display:flex;
     flex-direction:column;
@@ -147,88 +148,57 @@ body {
     box-shadow: 0px 10px 40px -12px #4d691b;
 }
 
-/* menu lateral */
-@import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap'); 
-
-    *{
-        margin: 0;
-        padding: 0;
-        font-family: 'Platypi', sans-serif;
+/* Para telas menores que 600px */
+@media only screen and (max-width: 600px) {
+    .favorites-header {
+      height: 80px; /* Reduz a altura do cabeçalho */
+      padding: 10px; /* Reduz o preenchimento do cabeçalho */
     }
-
-    body{
-        height: 120vh;
+  
+    .favorites-header h1 {
+      font-size: 1.5rem; /* Reduz o tamanho do título */
     }
+  
+    .back-button {
+      padding: 10px 20px; /* Reduz o tamanho do botão Voltar */
+    }
+  
+    .favorites-section {
+      grid-template-columns: repeat(
+        auto-fill,
+        minmax(200px, 1fr)
+      ); /* Ajusta o layout das receitas */
+    }
+  }
+  
+  /* Para telas menores que 400px */
+  @media only screen and (max-width: 400px) {
+    .favorites-header {
+      height: 60px; /* Reduz ainda mais a altura do cabeçalho */
+      padding: 5px; /* Reduz ainda mais o preenchimento do cabeçalho */
+    }
+  
+    .favorites-header h1 {
+      font-size: 1.2rem; /* Reduz ainda mais o tamanho do título */
+    }
+  
+    .back-button {
+      padding: 8px 16px; /* Reduz ainda mais o tamanho do botão Voltar */
+    }
+  }
 
-nav.menuLateral{
-    width: 50px;
-    height: 100%;
-    background-color: #4d691b;
-    padding: 40px 0 40px 1%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    transition: .5;
-}
-/* ficar apenas na lateral e fazer o movimento de expandir */
-nav.menuLateral:hover{
-    width: 300px;
-
-}
-/* simbolo de expandir */
-.expandir{
-    width: 100%;
-    padding-left: 5px;
-
-}
-.expandir > i{
-    color: white;
-    font-size: 30px;
-    cursor: pointer;
-}
-
-ul{
-    height: 100%;
-    list-style-type: none;
-
-}
-
-/* transição de corzinha */
-ul li.item-menu:hover{
-    background-color: #c4d6a6;
-}
-ul li.item-menu{
-    transition: 1s;
-}
-
-/* demais simbolos do menu */
-ul li.item-menu a {
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    padding: 20px 4%;
-    display: flex;
-    margin-bottom: 20px;
-    line-height: 30px;
-
-}
-ul li.item-menu a .txt-link{
-    margin-left: 35px;
-}
-ul li.item-menu a .icon > span{
-    font-size: 30px;
-
-}
 footer{
-    width: 101%;
-    padding: 20px 20px;
+    width: 102%;
+    margin: 50px 0 -50px 0;
+    bottom: 0;
+    padding: 20px;
     background: #c4d6a6;
     color: black;
     font-size: 9pt;
-}
-footer p{
+    bottom: 0;
+  }
+  footer p{
     margin: 0;
     text-align: center;
     color: #4d691b;
-}
+  }

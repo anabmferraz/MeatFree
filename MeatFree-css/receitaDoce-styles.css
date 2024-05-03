@@ -1,13 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap");
 
-/* Cores já definidas
-.color1  background: #88b830; /* cor dos botões login/ 
-.color2  background: #dce494; /* cor dos elementos (raminhos)
-.color3  color: #4d691b; /* cor da logo e textos
-.color4  background: #8cb34e; /* cor dos demais botões e menu
-.color5  background: #c4d6a6; /* cor de fundo balões
-.color6  background: #eafacf; /* cor de fundo tela 
-*/
 body {
   width: 92%;
   margin-left: 55px;
@@ -16,6 +8,7 @@ body {
   padding-bottom: 10px;
   overflow-x: hidden;
 }
+
 /* Cabeçalho da página */
 .doce-header {
   width: 103%;
@@ -26,16 +19,19 @@ body {
   align-items: center;
   background-color: #dce494;
 }
+
 .doce-header h1 {
   margin-left: 20px;
   font-weight: 700px;
   color: #4d691b;
 }
+
 .logo {
   max-width: 200px;
   height: auto;
   margin-left: auto;
 }
+
 .doce-img {
   max-width: 200px;
   height: auto;
@@ -206,15 +202,17 @@ body {
   align-items: center;
   text-align: center;
 }
-
-footer {
-  width: 101%;
-  padding: 20px 20px;
+footer{
+  width: 102%;
+  margin: 50px 0 -50px 0;
+  bottom: 0;
+  padding: 20px;
   background: #c4d6a6;
   color: black;
   font-size: 9pt;
+  bottom: 0;
 }
-footer p {
+footer p{
   margin: 0;
   text-align: center;
   color: #4d691b;

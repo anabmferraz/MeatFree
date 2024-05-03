@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap");
+
 body {
   width: 92%;
   margin-left: 55px;
@@ -71,12 +72,10 @@ body {
   box-shadow: 0px 5px 15px #4d691b;
   overflow: hidden;
 }
-
 .recipe-card img {
-  width: 100px;
+  width: 100%;
   height: auto;
   display: block;
-  border-radius: 40%;
 }
 
 .recipe-card h3 {
@@ -149,6 +148,7 @@ body {
     padding: 8px 16px; /* Reduz ainda mais o tamanho do botão Voltar */
   }
 }
+
 footer{
   width: 102%;
   margin: 50px 0 -50px 0;
