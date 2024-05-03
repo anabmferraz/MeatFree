@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nutricionista - Chat</title>
+    <link rel="stylesheet" href="/MeatFree-css/nutri.css" />
+    <link rel="stylesheet" href="/MeatFree-css/menuLateral - styles.css" />
+    <link rel="shortcut icon" href="/Imagens/icon.ico" type="image/x-icon" />
+    <link rel="icon" href="/Imagens/icon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    <!-- Cabeçalho da página de favoritos com logo-->
+    <header class="favorites-header">
+      <h1>COMUNIDADE</h1>
+      <img src="/Imagens/logo.png" class="logo" alt="Logo" />
+    </header>
+    <div class="app-container">
+      <nav class="menuLateral">
+        <div class="expandir">
+          <i class="icon"> <span class="material-icons">menu</span> </i>
+          <!--icone de expansão do menu -->
+        </div>
+
+        <!-- adicionando os componentes do menu -->
+        <ul>
+          <li class="item-menu">
+            <!-- perfil -->
+            <a href="#">
+              <span class="icon">
+                <span class="material-icons">person</span>
+              </span>
+              <!--será guardado o ícone de pessoa  -->
+              <span class="txt-link"> Perfil </span>
+            </a>
+          </li>
+
+          <li class="item-menu">
+            <!-- menu -->
+            <a href="#">
+              <span class="icon">
+                <span class="material-icons">home</span>
+              </span>
+              <!--será guardado o ícone de menu  -->
+              <span class="txt-link"> Menu </span>
+            </a>
+          </li>
+
+          <li class="item-menu">
+            <!-- receitas -->
+            <a href="#">
+              <span class="icon">
+                <span class="material-icons">restaurant</span>
+              </span>
+              <!--será guardado o ícone de receitas  -->
+              <span class="txt-link"> Receitas </span>
+            </a>
+          </li>
+
+          <li class="item-menu">
+            <!-- favoritos -->
+            <a href="#">
+              <span class="icon">
+                <span class="material-icons">favorite</span>
+              </span>
+              <!--será guardado o ícone de favoritos  -->
+              <span class="txt-link"> Favoritos </span>
+            </a>
+          </li>
+
+          <li class="item-menu">
+            <!-- sair -->
+            <a href="#">
+              <span class="icon">
+                <span class="material-icons">logout</span>
+              </span>
+              <!--será guardado o ícone logout  -->
+              <span class="txt-link"> Sair </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <aside class="contacts-sidebar">
+        <div class="contacts-header">
+          <h2>Mensagens</h2>
+        </div>
+        <ul class="contacts-list">
+          <!-- Lista de contatos -->
+          <li class="contact">
+            <img src="/Imagens/user-fem.png" alt="user-fem" />
+            Nutricionista
+          </li>
+          <li class="contact">
+            <img src="/Imagens/user-masc1.png" alt="user-masc1" />
+            Nutricionista - 1
+          </li>
+          <li class="contact">
+            <img src="/Imagens/user-fem3.png" alt="user-fem3" />
+            Nutricionista - 2
+          </li>
+          <!-- Adicione mais contatos conforme necessário -->
+        </ul>
+      </aside>
+      <main class="chat-container">
+        <div class="chat-header">
+          <img src="/Imagens/user-fem.png" alt="perfil1" />
+          <h2>Nutricionista</h2>
+        </div>
+        <div class="chat-messages">
+          <!-- Mensagens da conversa -->
+          <div class="message received">
+            <img src="/Imagens/user-fem.png" alt="" />
+            <p>Oi, tudo bem?</p>
+          </div>
+          <div class="message sent">
+            <p>Sim, estou bem. E você?</p>
+          </div>
+          <!-- Adicione mais mensagens conforme necessário -->
+        </div>
+        <div class="chat-input">
+          <input type="text" placeholder="Digite sua mensagem..." />
+          <button>Enviar</button>
+        </div>
+      </main>
+    </div>
+    <footer>
+      <p>
+        Desenvolvido por Ana Beatriz Maciel, Brenda Beatriz Cristaldo e Thaisse
+        Kirian Veiga. Alunas de Engenharia de Software na UTFPR-CP - 2024
+      </p>
+    </footer>
+  </body>
+</html>
