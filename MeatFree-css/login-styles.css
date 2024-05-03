@@ -6,14 +6,6 @@ body{
     width: 97%;
     background-color: #eafacf;
 }
- /*Cores usadas
-        .color1 { #88b830 cor dos botoes login/cadastro};
-        .color2 { #dce494 cor dos elementos (raminhos)};
-        .color3 { #4d691b cor da logo};
-        .color4 { #8cb34e cor dos demais botões e menu};
-        .color5 { #c4d6a6 cor de fundo balões};
-        .color6 {#eafacf cor de fundo tela
-        */
 .main-login{
     width: 100%;
     padding: 1px 20px;
@@ -137,18 +129,7 @@ body{
     color: #88b830;
     font-size: 1.2em;
 }
-footer{
-    width: 100%;
-    padding: 20px 20px;
-    background: #c4d6a6;
-    color: black;
-    font-size: 9pt; 
-}
-footer p{
-    margin: 0;
-    text-align: center;
-    color: #4d691b;
-}
+
 @media only screen and (max-width: 950px){
     .card-login{
         width: 85%;
@@ -162,4 +143,16 @@ footer p{
     .left-login > h2{
         display: none;
     }
+}
+footer{
+    width: 100%;
+    padding: 20px 20px;
+    background: #c4d6a6;
+    color: black;
+    font-size: 9pt; 
+}
+footer p{
+    margin: 0;
+    text-align: center;
+    color: #4d691b;
 }

@@ -133,19 +133,6 @@ body {
   }
 }
 
-footer {
-  width: 101%;
-  padding: 20px 20px;
-  background: #c4d6a6;
-  color: black;
-  font-size: 9pt;
-  bottom: 0;
-}
-footer p {
-  margin: 0;
-  text-align: center;
-  color: #4d691b;
-}
 /* Para telas menores que 400px */
 @media only screen and (max-width: 400px) {
   .minhas_receitas-header {
@@ -160,4 +147,17 @@ footer p {
   .back-button {
     padding: 8px 16px; /* Reduz ainda mais o tamanho do botão Voltar */
   }
+}
+footer {
+  width: 101%;
+  padding: 20px 20px;
+  background: #c4d6a6;
+  color: black;
+  font-size: 9pt;
+  bottom: 0;
+}
+footer p {
+  margin: 0;
+  text-align: center;
+  color: #4d691b;
 }

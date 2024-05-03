@@ -1,13 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap");
 
-/* Cores já definidas
-.color1  background: #88b830; /* cor dos botões login/ 
-.color2  background: #dce494; /* cor dos elementos (raminhos)
-.color3  color: #4d691b; /* cor da logo e textos
-.color4  background: #8cb34e; /* cor dos demais botões e menu
-.color5  background: #c4d6a6; /* cor de fundo balões
-.color6  background: #eafacf; /* cor de fundo tela 
-*/
 body {
   width: 92%;
   margin-left: 55px;

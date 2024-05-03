@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap'); 
 body{
     margin:0;
@@ -6,14 +5,7 @@ body{
     width: 97%;
     background-color: #eafacf;
 }
- /*Cores usadas
-        .color1 { #88b830 cor dos botoes login/cadastro};
-        .color2 { #dce494 cor dos elementos (raminhos)};
-        .color3 { #4d691b cor da logo};
-        .color4 { #8cb34e cor dos demais botões e menu};
-        .color5 { #c4d6a6 cor de fundo balões};
-        .color6 {#eafacf cor de fundo tela
-        */
+
 .main-cadastro{
     width: 100%;
     padding: 1px 20px;

@@ -1,21 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap");
-
-/* Cores já definidas
-.color1  background: #88b830; /* cor dos botões login/cadastro
-.color2  background: #dce494; /* cor dos elementos (raminhos)
-.color3  color: #4d691b; /* cor da logo e textos
-.color4  background: #8cb34e; /* cor dos demais botões e menu
-.color5  background: #c4d6a6; /* cor de fundo balões
-.color6  background: #eafacf; /* cor de fundo tela 
-#6f9e31 holder dos botões
-*/
 body {
   width: 92%;
   margin-left: 55px;
   font-family: "Platypi", sans-serif;
   background-color: #eafacf;
   padding-bottom: 10px;
-  margin-right: 0;
   overflow-x: hidden;
 }
 
@@ -30,7 +19,7 @@ body {
   background-color: #dce494;
 }
 .menu-header h1 {
-  margin-left: 100px;
+  margin-left: 20px;
   font-weight: 700;
   color: #4d691b;
 }
@@ -43,7 +32,7 @@ body {
 
 .card-menu {
   width: 400px;
-  margin: 100px auto;
+  margin: 50px auto;
   padding: 40px 45px;
   background: #dce494;
   border-radius: 20px;
@@ -74,7 +63,6 @@ body {
   margin: 10px 0;
   border-radius: 5px;
   width: 250px;
-  margin: 10px;
   transition: background-color 0.3s ease;
 }
 .menu li:hover {
@@ -86,4 +74,19 @@ body {
   font-size: 17px;
   color: black;
   font-weight: bold;
+}
+footer{
+  width: 102%;
+  margin: 50px 0 -50px 0;
+  bottom: 0;
+  padding: 20px;
+  background: #c4d6a6;
+  color: black;
+  font-size: 9pt;
+  bottom: 0;
+}
+footer p{
+  margin: 0;
+  text-align: center;
+  color: #4d691b;
 }
