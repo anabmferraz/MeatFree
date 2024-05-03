@@ -1,84 +1,149 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Receitas - Principal</title>
 
-    <link rel="stylesheet" href="/MeatFree-css/receitasPrincipal-styles.css"> <!--link para o css de receitas-->
-    <link rel="stylesheet" href="/MeatFree-css/menuLateral - styles.css"> <!--link para o css de menu-->
+    <link rel="stylesheet" href="/MeatFree-css/receitasPrincipal-styles.css" />
+    <link rel="stylesheet" href="/MeatFree-css/menuLateral - styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
 
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
-    
-    <link rel="shortcut icon" href="/Imagens/icon.ico" type="image/x-icon"> <!--iconizinho meat free -->
-    <link rel="icon" href="/Imagens/icon.ico" type="image/x-icon">
-</head>
-<body>
-    <!-- Menu lateral -->
+    <link rel="shortcut icon" href="/Imagens/icon.ico" type="image/x-icon" />
+    <link rel="icon" href="/Imagens/icon.ico" type="image/x-icon" />
+  </head>
+  <body>
     <nav class="menuLateral">
-        <div class="expandir">
-            <i class="icon" > <span class="material-icons">menu</span> </i> <!--icone de expansão do menu -->
-        </div>
-
-        <!-- adicionando os componentes do menu -->
-        <ul>
-            <li class="item-menu"> <!-- perfil -->
-                <a href="perfil.html"> 
-                    <span class="icon"> <span class="material-icons">person</span> </span> <!--será guardado o ícone de pessoa  -->
-                    <span class="txt-link"> Perfil </span>
-                </a>
-            </li>
-
-            <li class="item-menu"> <!-- menu -->
-                <a href="menu.html" > 
-                    <span class="icon"> <span class="material-icons">home</span> </span> <!--será guardado o ícone de menu  -->
-                    <span class="txt-link"> Menu </span>
-                </a>
-            </li>
-
-            <li class="item-menu"> <!-- receitas -->
-                <a href="/MeatFree-html/receitas-principal.html" > 
-                    <span class="icon"> <span class="material-icons">restaurant</span> </span> <!--será guardado o ícone de receitas  -->
-                    <span class="txt-link"> Receitas </span>
-                </a>
-            </li>
-
-            <li class="item-menu"> <!-- favoritos -->
-                <a href="favoritos.html" > 
-                    <span class="icon"> <span class="material-icons">favorite</span> </span> <!--será guardado o ícone de favoritos  -->
-                    <span class="txt-link"> Favoritos </span>
-                </a>
-            </li>
-
-            <li class="item-menu"> <!-- sair -->
-                <a href="login.html" > 
-                    <span class="icon"> <span class="material-icons">logout</span> </span> <!--será guardado o ícone logout  -->
-                    <span class="txt-link"> Sair </span>
-                </a>
-            </li>
-        </ul>
-
+      <div class="expandir">
+        <i class="icon"> <span class="material-icons">menu</span> </i>
+      </div>
+      <ul>
+        <li class="item-menu">
+          <a href="perfil.html">
+            <span class="icon">
+              <span class="material-icons">person</span>
+            </span>
+            <span class="txt-link"> Perfil </span>
+          </a>
+        </li>
+        <li class="item-menu">
+          <a href="menu.html">
+            <span class="icon"> <span class="material-icons">home</span> </span>
+            <span class="txt-link"> Menu </span>
+          </a>
+        </li>
+        <li class="item-menu">
+          <a href="/MeatFree-html/receitas-principal.html">
+            <span class="icon">
+              <span class="material-icons">restaurant</span>
+            </span>
+            <span class="txt-link"> Receitas </span>
+          </a>
+        </li>
+        <li class="item-menu">
+          <a href="favoritos.html">
+            <span class="icon">
+              <span class="material-icons">favorite</span>
+            </span>
+            <span class="txt-link"> Favoritos </span>
+          </a>
+        </li>
+        <li class="item-menu">
+          <a href="login.html">
+            <span class="icon">
+              <span class="material-icons">logout</span>
+            </span>
+            <span class="txt-link"> Sair </span>
+          </a>
+        </li>
+      </ul>
     </nav>
 
-    <!-- Cabeçalho da página de Receitas com logo-->
-    <header class="receitas-header">
-        <h1>RECEITAS</h1>
-        <img src="/Imagens/logo.png" class="logo" alt="Logo">
+    <header class="receitasPrincipal-header">
+      <h1>RECEITAS</h1>
+      <img src="/Imagens/logo.png" class="logo" alt="Logo" />
     </header>
-    
-     <!-- Seletor de classificação -->
-     <select id="sort-select" class="sort-select" onchange="sortRecipes()">
-        <option value="name">Salgado</option>
-        <option value="date">Doce</option>
-        <option value="rating">Bebidas</option>
+
+    <select id="sort-select" class="sort-select" onchange="sortRecipes()">
+      <option value="name">Salgado</option>
+      <option value="date">Doce</option>
+      <option value="rating">Bebidas</option>
     </select>
 
+    <section class="receitasPrincipal-section">
+      <div class="recipe-card">
+        <img src="/Imagens/Hamburguer de soja.jpeg" alt="Receita 1" />
+        <h3>Hambúrguer de Proteína de Soja</h3>
+        <p>
+          O hambúrguer de proteína de soja é uma alternativa vegana popular
+          feita principalmente de proteína de soja texturizada. Ideal para uma
+          refeição vegana nutritiva e satisfatória.
+        </p>
+        <button class="remove-favorite">Remover</button>
+      </div>
+      <div class="recipe-card">
+        <img src="/Imagens/MilkShake de Banana.jpg" alt="Receita 2" />
+        <h3>MilkShake de Banana com Cacau</h3>
+        <p>
+          Milkshake de Banana com Cacau é uma bebida vegana deliciosa, feita com
+          leite vegetal, banana e cacau em pó. É uma opção refrescante e
+          nutritiva para desfrutar a qualquer momento.
+        </p>
+        <button class="remove-favorite">Remover</button>
+      </div>
+      <div class="recipe-card">
+        <img src="/Imagens/Picolé de abacate.jpg" alt="Receita 3" />
+        <h3>Picolé de Abacate</h3>
+        <p>
+          O picolé de abacate é uma sobremesa refrescante e saudável, perfeita
+          para os dias quentes. Feito com abacate maduro, é uma opção
+          naturalmente cremosa e cheia de sabor.
+        </p>
+        <button class="remove-favorite">Remover</button>
+      </div>
+    </section>
 
-    <!-- <footer>
-        <p>Desenvolvido por Ana Beatriz Maciel, Brenda Beatriz Cristaldo e Thaisse Kirian Veiga.
-            Alunas de Engenharia de Software na UTFPR-CP - 2024</p>
-    </footer>   -->
-</body>
+    <section class="receitasPrincipal-section2">
+      <div class="recipe-card">
+        <img src="/Imagens/“Quiche” Vegana de Brócolis.png" alt="Receita 4" />
+        <h3>“Quiche” Vegana de Brócolis</h3>
+        <p>
+          Uma quiche vegana de brócolis, perfeita para quem busca uma opção
+          vegana cheia de sabor e nutrientes, combinando o frescor do brócolis
+          com uma massa crocante e deliciosa..
+        </p>
+        <button class="remove-favorite">Remover</button>
+      </div>
+      <div class="recipe-card">
+        <img src="/Imagens/Chá gelado com laranja.jpeg" alt="Receita 5" />
+        <h3>Chá Gelado com Laranja</h3>
+        <p>
+          Delicioso chá gelado com o toque cítrico da laranja, perfeito para
+          refrescar nos dias quentes e energizar seu paladar com um sabor
+          natural e revigorante.
+        </p>
+        <button class="remove-favorite">Remover</button>
+      </div>
+      <div class="recipe-card">
+        <img src="/Imagens/Brigadeiro.jpeg" alt="Receita 6" />
+        <h3>Brigadeiro Vegano</h3>
+        <p>
+          Um doce irresistível, feito com ingredientes naturais e livres de
+          produtos de origem animal. Uma opção deliciosa para quem busca uma
+          alimentação consciente e saborosa.
+        </p>
+        <button class="remove-favorite">Remover</button>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        Desenvolvido por Ana Beatriz Maciel, Brenda Beatriz Cristaldo e Thaisse
+        Kirian Veiga. Alunas de Engenharia de Software na UTFPR-CP - 2024
+      </p>
+    </footer>
+  </body>
 </html>

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap");
+
 body {
   width: 92%;
   margin-left: 55px;
@@ -8,8 +9,7 @@ body {
   overflow-x: hidden;
 }
 
-/* Cabeçalho da página */
-.receitas-header {
+.receitasPrincipal-header {
   width: 103%;
   height: 100px;
   padding: 20px;
@@ -19,15 +19,16 @@ body {
   border-radius: 10px;
   background-color: #dce494;
 }
-.receitas-header h1 {
+
+.receitasPrincipal-header h1 {
   margin-left: 20px;
   font-weight: 700;
   color: #4d691b;
 }
 
-.  {
+.logo {
   max-width: 200px;
-  height: auto;
+  height: 700;
   margin-left: auto;
 }
 
@@ -45,15 +46,125 @@ body {
   cursor: pointer;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.receitasPrincipal-section,
+.receitasPrincipal-section2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  flex-wrap: wrap;
+  gap: 3px;
+  padding: 20px;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 3%;
+  padding-left: 50px;
+}
+
+.recipe-card {
+  width: calc(100% - 20px);
+  margin-bottom: 20px;
+  background-color: #c4d6a6;
+  border-radius: 20px;
+  box-shadow: 0px 5px 15px #4d691b;
+}
+
+.recipe-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 20px;
+}
+
+.recipe-card h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #4d691b;
+  padding: 10px;
+}
+
+.recipe-card p {
+  font-size: 1rem;
+  color: black;
+  padding: 0 10px 10px;
+  text-align: center;
+}
+
+.remove-favorite {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600px;
+  letter-spacing: 1px;
+  background-color: #88b830;
+  color: black;
+  cursor: pointer;
+  margin: 10px 90px;
+}
+
+.remove-favorite:hover {
+  background-color: #6f9e31;
+  transition: background-color 0.3s ease;
+}
+
 footer {
-  width: 101%;
-  padding: 20px 20px;
+  width: 102%;
+  margin: 50px 0 -50px 0;
+  bottom: 0;
+  padding: 20px;
   background: #c4d6a6;
   color: black;
   font-size: 9pt;
+  bottom: 0;
 }
+
 footer p {
   margin: 0;
   text-align: center;
   color: #4d691b;
+}
+
+@media only screen and (max-width: 600px) {
+  .receitasPrincipal-header {
+    height: 80px;
+    padding: 10px;
+  }
+
+  .receitasPrincipal-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .back-button {
+    padding: 10px 20px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .favorites-header {
+    height: 60px;
+    padding: 5px;
+  }
+
+  .favorites-header h1 {
+    font-size: 1.2rem;
+  }
+
+  .back-button {
+    padding: 8px 16px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .left-cadastro,
+  .rigth-cadastro {
+    width: 100%;
+  }
+
+  .left-login-image {
+    margin-top: -45px;
+  }
 }
