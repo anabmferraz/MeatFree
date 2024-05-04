@@ -170,8 +170,8 @@ body {
 
 .ingredientes > h1 {
   font-size: 2vw;
-  margin-top: -20px;
-  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 15px;
   color: #4d691b;
 }
 
@@ -184,7 +184,7 @@ body {
   align-items: center;
   text-align: center;
   list-style-type: disc;
-  margin-top: -10px;
+  margin-top: 30px;
 }
 
 .ingredientes > ul > li {
@@ -199,6 +199,7 @@ body {
   align-items: center;
   padding: 20px;
   margin-right: 20px;
+  margin-top: 10px;
 }
 
 .dicas > h1 {
