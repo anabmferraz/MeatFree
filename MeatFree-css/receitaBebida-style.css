@@ -155,8 +155,8 @@ body {
 }
 .ingredientes > h1 {
   font-size: 2vw;
-  margin-top: -20px;
-  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 15px;
   color: #4d691b;
 }
 .ingredientes > ul {
@@ -168,6 +168,7 @@ body {
   align-items: center;
   text-align: center;
   list-style-type: disc;
+  margin-top: 30px;
 }
 .ingredientes > ul > li {
   margin-bottom: 10px; /* Espaçamento entre os itens da lista */
@@ -181,6 +182,7 @@ body {
   align-items: center;
   padding: 20px;
   margin-right: 10px;
+  margin-top: 35px;
 }
 .dicas > h1 {
   font-size: 2vw;
