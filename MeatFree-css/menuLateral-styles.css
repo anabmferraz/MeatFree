@@ -19,7 +19,7 @@ nav.menuLateral{
     top: 0;
     left: 0;
     overflow: hidden;
-    transition: 0.5;
+    transition: 0.5s;
 }
 
 /* ficar apenas na lateral e fazer o movimento de expandir */
