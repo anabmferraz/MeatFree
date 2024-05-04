@@ -8,10 +8,9 @@ body {
   margin: 0;
   background-color: #eafacf;
   overflow-x: hidden;
-
 }
 
-.favorites-header {
+.nutri-header {
   width: 100%;
   height: 100px;
   padding: 20px;
@@ -22,7 +21,7 @@ body {
   margin-bottom: 15px;
 }
 
-.favorites-header h1 {
+.nutri-header h1 {
   margin-left: 100px;
   font-weight: 700;
   color: #4d691b;
@@ -93,7 +92,7 @@ body {
   font-size: 30px;
 }
 
-.contacts-sidebar {
+.contatos-sidebar {
   width: 250px;
   background-color: #f2f2f2;
   border-radius: 10px;
@@ -104,7 +103,7 @@ body {
   margin-left: 60px;
 }
 
-.contacts-header {
+.contatos-header {
   background-color: #dce494;
   color: #fff;
   height: 30px;
@@ -113,12 +112,12 @@ body {
   border-top-right-radius: 10px;
 }
 
-.contacts-list {
+.contatos-list {
   padding: 0;
   margin: 0;
 }
 
-.contact {
+.contato {
   display: flex;
   align-items: center;
   padding: 10px;
@@ -128,10 +127,10 @@ body {
   cursor: pointer;
 }
 
-.contact:hover {
+.contato:hover {
   background-color: #f0f0f0;
 }
-.contacts-list .contact img,
+.contatos-list .contato img,
 .chat-header img,
 .message img {
   width: 30px;
@@ -168,25 +167,25 @@ body {
   margin-right: 10px;
 }
 
-.chat-messages {
+.chat-mensagens {
   padding: 10px;
   height: 250px;
   overflow-y: auto;
 }
-.message.received {
+.messagem-recebidas {
   display: flex;
   align-items: center;
 }
-.message {
+.mensagem {
   margin-bottom: 10px;
 }
 
-.message.sent {
+.messagem-enviada {
   display: flex;
   justify-content: flex-end;
 }
 
-.message.sent p {
+.messagem.enviada p {
   background-color: #f2f2f2;
   padding: 10px;
   border-radius: 10px;
@@ -226,7 +225,7 @@ body {
   display: flex;
   width: 99%;
 }
-.chat-and-contacts {
+.chat-and-contatos {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -247,17 +246,16 @@ body {
   color: #ffffff;
 }
 
-footer{
-  width: 102%;
+footer {
+  width: 100%;
+  position: inherit;
   margin: 50px 0 -50px 0;
-  bottom: 0;
   padding: 20px;
   background: #c4d6a6;
   color: black;
   font-size: 9pt;
-  bottom: 0;
 }
-footer p{
+footer p {
   margin: 0;
   text-align: center;
   color: #4d691b;
