@@ -7,6 +7,7 @@ body {
     margin: 0;
     font-family: 'Platypi', sans-serif;
     background-color: #eafacf;
+    overflow-x: hidden;
 }
 
 .main-cadastro {
@@ -29,14 +30,15 @@ body {
 
 .left-cadastro > h1 {
     font-size: 17pt;
-    margin-top: -20px;
+    margin-top: -45px;
     color: #4d691b
 }
 
 .left-cadastro > h3 {
     font-size: 12pt;
     color: #4d691b;
-    margin-top: -5px;
+    margin-bottom:40px;
+    margin-top: -10px;
 }
 
 .left-login-image {
@@ -130,24 +132,7 @@ body {
 
 .submit-button:hover {
     background-color: #6f9e31;
-    /* Mudar a cor de fundo ao passar o mouse */
     transition: background-color 0.3s ease;
-    /* Adicionar uma transição suave */
-}
-
-.register-link {
-    text-align: center;
-    margin-top: 10px;
-}
-
-.register-link a {
-    color: black;
-    text-decoration: none;
-}
-
-.register-link a:hover {
-    text-decoration: underline;
-    /* Adiciona sublinhado ao passar o mouse sobre o link */
 }
 
 .highlight {
@@ -170,8 +155,6 @@ footer p {
     color: #4d691b;
 }
 
-/* Media queries para diferentes tamanhos de tela */
-  /* Tamanho da tela menor que 400px */
 @media only screen and (max-width: 400px) {
     .left-cadastro,
     .rigth-cadastro {
@@ -186,7 +169,7 @@ footer p {
         padding: 16px 0;
     }
 }
-/*tamanho da tela menores que 600px*/
+
 @media only screen and (max-width: 600px){
     .main-cadastro {
         flex-direction: column;
@@ -206,7 +189,7 @@ footer p {
         margin-top: -50px;
     }
 }
-/*tamanho da tela maior que 1024px*/
+
 @media only screen and (min-width: 1024px) {
     .left-cadastro,
     .rigth-cadastro {

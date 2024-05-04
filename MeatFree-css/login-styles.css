@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
 body{
     margin:0;
     font-family: 'Platypi', sans-serif;
@@ -108,8 +108,8 @@ body{
     box-shadow: 0px 10px 40px -12px #4d691b;
 }
 .submit-button:hover {
-    background-color: #6f9e31; /* Mudar a cor de fundo ao passar o mouse */
-    transition: background-color 0.3s ease; /* Adicionar uma transição suave */
+    background-color: #6f9e31;
+    transition: background-color 0.3s ease;
 }
 
 .register-link{
@@ -121,7 +121,7 @@ body{
     text-decoration: none; 
 }
 .register-link a:hover {
-    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse sobre o link */
+    text-decoration: underline;
 }
 .register-link .highlight{
     font-weight: bold;
@@ -134,7 +134,7 @@ body{
         width: 85%;
     }
 }
-/* caso de entrar pelo celular */
+
 @media only screen and (max-width: 600px){
     .main-login{
         flex-direction: column;
@@ -143,6 +143,14 @@ body{
         display: none;
     }
 }
+
+@media only screen and (min-width: 1024px) {
+    .left-login,
+    .rigth-login {
+        width: 60%;
+    }
+}
+
 footer{
     width: 100%;
     padding: 20px 20px;

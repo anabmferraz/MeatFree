@@ -7,7 +7,7 @@ body {
   padding-bottom: 10px;
   overflow-x: hidden;
 }
-/* Cabeçalho da página */
+
 .perfil-header {
   width: 103%;
   height: 100px;
@@ -17,23 +17,26 @@ body {
   align-items: center;
   background-color: #dce494;
 }
+
 .perfil-header h1 {
   margin-left: 20px;
   font-weight: 700;
   color: #4d691b;
 }
+
 .logo {
   max-width: 200px;
   height: auto;
   margin-left: auto;
 }
+
 .perfil-img {
   max-width: 200px;
   height: auto;
   margin: 0 auto;
-  border-radius: 50%; /* Torna a imagem de perfil circular */
+  border-radius: 50%;
 }
-/* Estilo do seletor de classificação */
+
 .main-perfil {
   width: 100%;
   height: 100vh;
@@ -41,8 +44,9 @@ body {
   background-color: #eafacf;
   display: flex;
   justify-content: center;
-  align-items: center; /* Centraliza o conteúdo verticalmente */
+  align-items: center;
 }
+
 .left-perfil {
   width: auto;
   height: auto;
@@ -50,8 +54,9 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  margin-left: 215px; /* Adiciona margem à esquerda */
+  margin-left: 215px;
 }
+
 .left-perfil > h1 {
   font-size: 2vw;
   margin-top: -20px;
@@ -71,13 +76,16 @@ body {
   box-shadow: 0px 10px 40px #4d691b;
   margin-bottom: 100px;
 }
+
 .card-perfil > h2 {
   font-weight: 750;
   margin: 0;
 }
+
 .card-perfil > p {
   margin: 0;
 }
+
 .rigth-perfil {
   width: auto;
   height: 100vh;
@@ -86,13 +94,15 @@ body {
   align-items: center;
   margin-left: 70px;
 }
+
 .right-content {
-  width: 50%; /* Ajusta a largura conforme necessário */
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 .right-content > p {
   margin: 0;
   text-align: justify;
@@ -102,6 +112,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .favoritos-button {
   width: 50%;
   padding: 16px 0px;
@@ -124,10 +135,10 @@ body {
   text-decoration: none;
   color: #000;
 }
+
 .editar-perfil-button {
   width: 50%;
   padding: 16px 0px;
-  /* margin: 25px; */
   border: none;
   text-decoration: none;
   border-radius: 8px;
@@ -140,6 +151,7 @@ body {
   cursor: pointer;
   box-shadow: 0px 10px 40px -12px #4d691b;
 }
+
 .receitas-button {
   width: 50%;
   padding: 16px 0px;
@@ -156,42 +168,32 @@ body {
   box-shadow: 0px 10px 40px -12px #4d691b;
 }
 
-/* Para telas menores que 600px */
 @media only screen and (max-width: 600px) {
-  .favorites-header {
-    height: 80px; /* Reduz a altura do cabeçalho */
-    padding: 10px; /* Reduz o preenchimento do cabeçalho */
+  .perfil-header {
+    height: 80px;
+    padding: 10px;
   }
 
-  .favorites-header h1 {
-    font-size: 1.5rem; /* Reduz o tamanho do título */
-  }
-
-  .back-button {
-    padding: 10px 20px; /* Reduz o tamanho do botão Voltar */
-  }
-
-  .favorites-section {
-    grid-template-columns: repeat(
-      auto-fill,
-      minmax(200px, 1fr)
-    ); /* Ajusta o layout das receitas */
+  .perfil-header h1 {
+    font-size: 1.5rem;
   }
 }
 
-/* Para telas menores que 400px */
 @media only screen and (max-width: 400px) {
-  .favorites-header {
-    height: 60px; /* Reduz ainda mais a altura do cabeçalho */
-    padding: 5px; /* Reduz ainda mais o preenchimento do cabeçalho */
+  .perfil-header {
+    height: 60px;
+    padding: 5px;
   }
 
-  .favorites-header h1 {
-    font-size: 1.2rem; /* Reduz ainda mais o tamanho do título */
+  .perfil-header h1 {
+    font-size: 1.2rem;
   }
+}
 
-  .back-button {
-    padding: 8px 16px; /* Reduz ainda mais o tamanho do botão Voltar */
+@media only screen and (min-width: 1024px) {
+  .left-perfil,
+  .rigth-perfil {
+    width: 60%;
   }
 }
 
@@ -205,6 +207,7 @@ footer {
   font-size: 9pt;
   bottom: 0;
 }
+
 footer p {
   margin: 0;
   text-align: center;

@@ -8,7 +8,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Cabeçalho da página */
 .menu-header {
   width: 103%;
   height: 100px;
@@ -43,7 +42,6 @@ body {
   text-align: center;
 }
 
-/* Estilos adicionais para o menu */
 .menu {
   display: flex;
   justify-content: center;
@@ -66,7 +64,7 @@ body {
   transition: background-color 0.3s ease;
 }
 .menu li:hover {
-  background-color: #6f9e31; /* Mudar a cor de fundo ao passar o mouse */
+  background-color: #6f9e31;
 }
 
 .menu li a {
@@ -75,7 +73,7 @@ body {
   color: black;
   font-weight: bold;
 }
-footer{
+footer {
   width: 102%;
   margin: 50px 0 -50px 0;
   bottom: 0;
@@ -85,8 +83,37 @@ footer{
   font-size: 9pt;
   bottom: 0;
 }
-footer p{
+footer p {
   margin: 0;
   text-align: center;
   color: #4d691b;
+}
+
+@media only screen and (max-width: 600px) {
+  .menu-header {
+    height: 80px;
+    padding: 10px;
+  }
+
+  .menu-header h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .menu-header {
+    height: 60px;
+    padding: 5px;
+  }
+
+  .menu-header h1 {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .left-bebida,
+  .rigth-bebida {
+      width: 60%;
+  }
 }
