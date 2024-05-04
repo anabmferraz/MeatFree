@@ -22,7 +22,7 @@ body {
   background-color: #dce494;
 }
 
-.community-header h1 {
+.comunidade-header h1 {
   margin-left: 100px;
   font-weight: 700;
   color: #4d691b;
@@ -101,7 +101,7 @@ body {
   margin-left: 35px;
 }
 
-.communidade {
+.comunidade {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
@@ -109,7 +109,7 @@ body {
   margin-bottom: 20px;
 }
 
-.left-side {
+.menu-left {
   flex-basis: calc(40% - 20px);
 }
 
@@ -144,6 +144,7 @@ body {
 
 .post-form button {
   width: 50%;
+  display: block;
   padding: 10px;
   background-color: #4d691b;
   color: #ffffff;
@@ -152,7 +153,7 @@ body {
   cursor: pointer;
 }
 
-.photo-search {
+.foto-search {
   width: 6%;
   height: auto;
   cursor: pointer;
@@ -232,7 +233,7 @@ body {
   color: #ffffff;
 }
 
-.profile1 {
+.perfil1 {
   width: 30px;
   height: 30px;
   border-radius: 50%;
