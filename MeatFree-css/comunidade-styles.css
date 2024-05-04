@@ -12,7 +12,7 @@ body {
   overflow-x: hidden;
 }
 
-.community-header {
+.comunidade-header {
   width: 100%;
   height: 100px;
   padding: 20px;
@@ -101,7 +101,7 @@ body {
   margin-left: 35px;
 }
 
-.community {
+.communidade {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;

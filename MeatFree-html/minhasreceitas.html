@@ -1,107 +1,124 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meat Free - Minhas receitas</title>
-    <link rel="stylesheet" href="/MeatFree-css/minhasreceitas-style.css">
-    <link rel="stylesheet" href="/MeatFree-css/menuLateral - styles.css">
-    <link rel="shortcut icon" href="/Imagens/icon.ico" type="image/x-icon">
-    <link rel="icon" href="/Imagens/icon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-</head>
-<body>
-    <!-- Menu lateral -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minhas receitas</title>
+    <link rel="stylesheet" href="/MeatFree-css/minhasreceitas-style.css" />
+    <link rel="stylesheet" href="/MeatFree-css/menuLateral-styles.css" />
+    <link rel="shortcut icon" href="/Imagens/icon.ico" type="image/x-icon" />
+    <link rel="icon" href="/Imagens/icon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </head>
+  <body>
     <nav class="menuLateral">
-        <div class="expandir">
-            <i class="icon" > <span class="material-icons">menu</span> </i> <!--icone de expansão do menu -->
-        </div>
-        <!-- adicionando os componentes do menu -->
-        <ul>
-            <li class="item-menu"> <!-- perfil -->
-                <a href="perfil.html"> 
-                    <span class="icon"> <span class="material-icons">person</span> </span> <!--será guardado o ícone de pessoa  -->
-                    <span class="txt-link"> Perfil </span>
-                </a>
-            </li>
+      <div class="expandir">
+        <i class="icon"> <span class="material-icons">menu</span> </i>
+      </div>
 
-            <li class="item-menu"> <!-- menu -->
-                <a href="menu.html" > 
-                    <span class="icon"> <span class="material-icons">home</span> </span> <!--será guardado o ícone de menu  -->
-                    <span class="txt-link"> Menu </span>
-                </a>
-            </li>
+      <ul>
+        <li class="item-menu">
+          <a href="perfil.html">
+            <span class="icon">
+              <span class="material-icons">person</span>
+            </span>
+            <span class="txt-link"> Perfil </span>
+          </a>
+        </li>
 
-            <li class="item-menu"> <!-- receitas -->
-                <a href="/MeatFree-html/receitas-principal.html" > 
-                    <span class="icon"> <span class="material-icons">restaurant</span> </span> <!--será guardado o ícone de receitas  -->
-                    <span class="txt-link"> Receitas </span>
-                </a>
-            </li>
+        <li class="item-menu">
+          <a href="menu.html">
+            <span class="icon"> <span class="material-icons">home</span> </span>
 
-            <li class="item-menu"> <!-- favoritos -->
-                <a href="favoritos.html" > 
-                    <span class="icon"> <span class="material-icons">favorite</span> </span> <!--será guardado o ícone de favoritos  -->
-                    <span class="txt-link"> Favoritos </span>
-                </a>
-            </li>
+            <span class="txt-link"> Menu </span>
+          </a>
+        </li>
 
-            <li class="item-menu"> <!-- sair -->
-                <a href="login.html" > 
-                    <span class="icon"> <span class="material-icons">logout</span> </span> <!--será guardado o ícone logout  -->
-                    <span class="txt-link"> Sair </span>
-                </a>
-            </li>
-        </ul>
+        <li class="item-menu">
+          <a href="/MeatFree-html/receitas-principal.html">
+            <span class="icon">
+              <span class="material-icons">restaurant</span>
+            </span>
 
+            <span class="txt-link"> Receitas </span>
+          </a>
+        </li>
+
+        <li class="item-menu">
+          <a href="favoritos.html">
+            <span class="icon">
+              <span class="material-icons">favorite</span>
+            </span>
+
+            <span class="txt-link"> Favoritos </span>
+          </a>
+        </li>
+
+        <li class="item-menu">
+          <a href="login.html">
+            <span class="icon">
+              <span class="material-icons">logout</span>
+            </span>
+
+            <span class="txt-link"> Sair </span>
+          </a>
+        </li>
+      </ul>
     </nav>
 
-    <!-- Cabeçalho da página de minhas receitas -->
     <header class="minhas_receitas-header">
-        <h1>MINHAS RECEITAS</h1>
-        <img src="/Imagens/logo.png" class="logo" alt="Logo">
+      <h1>MINHAS RECEITAS</h1>
+      <img src="/Imagens/logo.png" class="logo" alt="Logo" />
     </header>
 
-    <!-- Seletor de classificação -->
     <select id="sort-select" class="sort-select" onchange="sortRecipes()">
-        <option value="name">Nome</option>
-        <option value="date">Data de Adição</option>
-        <option value="rating">Avaliação</option>
+      <option value="name">Nome</option>
+      <option value="date">Data de Adição</option>
+      <option value="rating">Avaliação</option>
     </select>
 
-    <!-- Seção de receitas favoritas -->
     <section class="minhas_receitas-section">
-        <!-- Exemplo de card de receita -->
-        <div class="recipe-card">
-            <a href="/MeatFree-html/receitas-salgado.html"> 
-                <img src="/Imagens/Hamburguer de soja.jpeg" alt="Salgada">
-                <h3>Hamburguer de Soja</h3>
-            </a>
-            <p>Este hambúrguer vegano é delicioso e bem fácil de preparar.</p>
-            <button class="remove-favorite">Remover</button>
-        </div>
-        <!-- Um card de receita para cada receita favorita -->
-        <div class="recipe-card">
-            <a href="/MeatFree-html/receitas-bebida.html"> 
-                <img src="/Imagens/MilkShake de Banana.jpg" alt="Bebida">
-                <h3>MilkShake de Banana</h3>
-            </a>
-            <p>Aprenda a fazer um milkshake irresistível, que combina a suavidade da banana com o sabor intenso do cacau.</p>
-            <button class="remove-favorite">Remover</button>
-        </div>
-        <div class="recipe-card">
-            <a href="/MeatFree-html/receitas-doce.html"> 
-                <img src="/Imagens/Picolé de abacate.jpg" alt="Doce">
-                <h3>Picolé de Abacate</h3>
-            </a>
-            <p>Aqui está uma receita simples, deliciosa e refrescante para fazer picolés nutritivos em casa.</p>
-            <button class="remove-favorite">Remover</button>
-        </div>
+      <div class="receitas-card">
+        <a href="/MeatFree-html/receitas-salgado.html">
+          <img src="/Imagens/HamburguerSoja.jpeg" alt="Salgada" />
+          <h3>Hamburguer de Soja</h3>
+        </a>
+        <p>Este hambúrguer vegano é delicioso e bem fácil de preparar.</p>
+        <button class="remover-favoritos">Remover</button>
+      </div>
+
+      <div class="receitas-card">
+        <a href="/MeatFree-html/receitas-bebida.html">
+          <img src="/Imagens/MilkShakedeBanana.jpg" alt="Bebida" />
+          <h3>MilkShake de Banana</h3>
+        </a>
+        <p>
+          Aprenda a fazer um milkshake irresistível, que combina a suavidade da
+          banana com o sabor intenso do cacau.
+        </p>
+        <button class="remover-favoritos">Remover</button>
+      </div>
+      <div class="receitas-card">
+        <a href="/MeatFree-html/receitas-doce.html">
+          <img src="/Imagens/PicoléAbacate.jpg" alt="Doce" />
+          <h3>Picolé de Abacate</h3>
+        </a>
+        <p>
+          Aqui está uma receita simples, deliciosa e refrescante para fazer
+          picolés nutritivos em casa.
+        </p>
+        <button class="remover-favoritos">Remover</button>
+      </div>
     </section>
-    
+
     <footer>
-        <p>Desenvolvido por Ana Beatriz Maciel, Brenda Beatriz Cristaldo e Thaisse Kirian Veiga.
-            Alunas de Engenharia de Software na UTFPR-CP - 2024</p>
-    </footer>   
-</body>
+      <p>
+        Desenvolvido por Ana Beatriz Maciel, Brenda Beatriz Cristaldo e Thaisse
+        Kirian Veiga. Alunas de Engenharia de Software na UTFPR-CP - 2024
+      </p>
+    </footer>
+  </body>
 </html>
