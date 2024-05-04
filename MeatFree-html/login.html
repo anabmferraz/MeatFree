@@ -9,24 +9,18 @@
     <title>Login</title>
 </head>
 <body>
-    <!-- div principal -->
     <div class="main-login"> 
-        <!-- div da esquerda -->
         <div class="left-login">
             <img src="/Imagens/logo.png" class="logo" alt="Logo">
             <h1> Junte-se à comunidade: entre e participe!</h1>
             <img src="/Imagens/Animação-Login.svg" class="left-login-image" alt="Veg">
         </div>
         
-        <!-- div da direita -->
         <div class="rigth-login">
-            <!-- div para o card do formulário -->
             <div class="card-login">
                 <h1>LOGIN</h1>
 
-                <!--Adicionando a tag form-->
                 <form action="seu_script_de_processamento.php" method="post" id="login-form">
-                    <!-- div com label e input -->
                     <div class="text-field">
                         <label for="email"> E-mail </label>
                         <input type="email" id="email" name="email" placeholder="Utilize email válido" required>
@@ -50,20 +44,5 @@
             Alunas de Engenharia de Software na UTFPR-CP - 2024</p>
     </footer>
 
-    <!-- Adicionando o script de validação do lado do cliente -->
-    <script>
-        // Função para validar o formulário antes do envio
-        function validateForm() {
-            var form = document.getElementById('login-form');
-            if (form.checkValidity()) {
-                // Se o formulário for válido, o envio será realizado
-                return true;
-            } else {
-                // Se o formulário for inválido, exibe uma mensagem de erro
-                alert('Por favor, preencha todos os campos corretamente.');
-                return false;
-            }
-        }
-    </script>
 </body>
 </html>

@@ -55,6 +55,7 @@ body {
 .receitasPrincipal-section,
 .receitasPrincipal-section2 {
   display: grid;
+  text-decoration: none;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   flex-wrap: wrap;
   gap: 3px;
@@ -64,7 +65,9 @@ body {
   padding-bottom: 3%;
   padding-left: 50px;
 }
-
+.recipe-card a {
+  text-decoration: none;
+}
 .recipe-card {
   width: calc(100% - 20px);
   margin-bottom: 20px;

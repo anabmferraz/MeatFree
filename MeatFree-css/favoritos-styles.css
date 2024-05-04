@@ -9,7 +9,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Cabeçalho da página */
 .favorites-header {
   width: 103%;
   height: 100px;
@@ -32,7 +31,6 @@ body {
   margin-left: auto;
 }
 
-/* Estilo do seletor de classificação */
 .sort-select {
   margin-bottom: 20px;
   margin-top: 15px;
@@ -47,13 +45,11 @@ body {
   cursor: pointer;
 }
 
-/* Estilo das opções do seletor de classificação */
 .sort-select option {
   background-color: #c4d6a6;
   color: black;
 }
 
-/* Seção de receitas favoritas */
 .favorites-section {
   width: auto;
   display: grid;
@@ -65,7 +61,6 @@ body {
   padding-left: 50px;
 }
 
-/* Card de receita individual */
 .recipe-card {
   background-color: #c4d6a6;
   border-radius: 10px;
@@ -93,12 +88,11 @@ body {
   padding: 0 10px 10px;
 }
 
-/* Botão de remover dos favoritos */
 .remove-favorite {
   padding: 10px 15px;
   border: none;
   border-radius: 8px;
-  font-weight: 600px;
+  font-weight: 600;
   letter-spacing: 1px;
   background-color: #88b830;
   color: black;
@@ -106,8 +100,8 @@ body {
   margin: 10px 165px;
 }
 .remove-favorite:hover {
-  background-color: #6f9e31; /* Mudar a cor de fundo ao passar o mouse */
-  transition: background-color 0.3s ease; /* Adicionar uma transição suave */
+  background-color: #6f9e31;
+  transition: background-color 0.3s ease;
 }
 
 footer{
@@ -126,51 +120,42 @@ footer p{
   color: #4d691b;
 }
 
-/* Para telas menores que 600px */
 @media only screen and (max-width: 600px) {
   .favorites-header {
-    height: 80px; /* Reduz a altura do cabeçalho */
-    padding: 10px; /* Reduz o preenchimento do cabeçalho */
+    height: 80px;
+    padding: 10px;
   }
 
   .favorites-header h1 {
-    font-size: 1.5rem; /* Reduz o tamanho do título */
+    font-size: 1.5rem;
   }
 
   .back-button {
-    padding: 10px 20px; /* Reduz o tamanho do botão Voltar */
+    padding: 10px 20px;
   }
 
   .favorites-section {
-    grid-template-columns: repeat(
-      auto-fill,
-      minmax(200px, 1fr)
-    ); /* Ajusta o layout das receitas */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
 }
 
-/* Para telas menores que 400px */
 @media only screen and (max-width: 400px) {
   .favorites-header {
-    height: 60px; /* Reduz ainda mais a altura do cabeçalho */
-    padding: 5px; /* Reduz ainda mais o preenchimento do cabeçalho */
+    height: 60px;
+    padding: 5px;
   }
 
   .favorites-header h1 {
-    font-size: 1.2rem; /* Reduz ainda mais o tamanho do título */
+    font-size: 1.2rem;
   }
 
   .back-button {
-    padding: 8px 16px; /* Reduz ainda mais o tamanho do botão Voltar */
+    padding: 8px 16px;
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  .left-cadastro,
-  .rigth-cadastro {
-      width: 100%;
-  }
-  .left-login-image {
-      margin-top: -45px;
+  .body {
+    width: 100%;
   }
 }
