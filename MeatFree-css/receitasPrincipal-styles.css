@@ -65,13 +65,14 @@ body {
   padding-bottom: 3%;
   padding-left: 50px;
 }
-.recipe-card a {
+.recipe-card section2 a {
   text-decoration: none;
 }
 .recipe-card {
   width: calc(100% - 20px);
   margin-bottom: 20px;
   background-color: #c4d6a6;
+  text-decoration: none;
   border-radius: 20px;
   box-shadow: 0px 5px 15px #4d691b;
 }
@@ -81,6 +82,7 @@ body {
   height: auto;
   display: block;
   border-radius: 20px;
+  text-decoration: none;
 }
 
 .recipe-card h3 {
@@ -88,6 +90,10 @@ body {
   text-align: center;
   color: #4d691b;
   padding: 10px;
+  text-decoration: none;
+}
+.recipe-card a {
+  text-decoration: none;
 }
 
 .recipe-card p {
@@ -95,6 +101,7 @@ body {
   color: black;
   padding: 0 10px 10px;
   text-align: center;
+  text-decoration: none;
 }
 
 .remove-favorite {
@@ -124,7 +131,6 @@ footer {
   font-size: 9pt;
   bottom: 0;
 }
-
 footer p {
   margin: 0;
   text-align: center;
