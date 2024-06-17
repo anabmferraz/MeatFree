@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Editar perfil</title>
+    <link rel="stylesheet" href="editar-styles.css" />
+    <link rel="stylesheet" href="../menu-lateral/menuLateral-styles.css" />
+    <link rel="shortcut icon" href="../Imagens/icon.ico" type="image/x-icon" />
+    <link rel="icon" href="../Imagens/icon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </head>
+  <body>
+    <nav class="menuLateral">
+      <div class="expandir">
+        <i class="icon"> <span class="material-icons">menu</span> </i>
+      </div>
+
+      <ul>
+        <li class="item-menu">
+          <a href="../perfil/perfil.html">
+            <span class="icon">
+              <span class="material-icons">person</span>
+            </span>
+            <span class="txt-link"> Perfil </span>
+          </a>
+        </li>
+
+        <li class="item-menu">
+          <a href="../menu/menu.html">
+            <span class="icon"> <span class="material-icons">home</span> </span>
+            <span class="txt-link"> Menu </span>
+          </a>
+        </li>
+
+        <li class="item-menu">
+          <a href="../index.html">
+            <span class="icon">
+              <span class="material-icons">restaurant</span>
+            </span>
+            <span class="txt-link"> Receitas </span>
+          </a>
+        </li>
+
+        <li class="item-menu">
+          <a href="../favoritos/favoritos.html">
+            <span class="icon">
+              <span class="material-icons">favorite</span>
+            </span>
+            <span class="txt-link"> Favoritos </span>
+          </a>
+        </li>
+
+        <li class="item-menu">
+          <a href="../login/login.html">
+            <span class="icon">
+              <span class="material-icons">logout</span>
+            </span>
+            <span class="txt-link"> Sair </span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <header class="perfil-header">
+      <h1>EDITAR PERFIL</h1>
+      <img src="../Imagens/logo.png" class="logo" alt="Logo" />
+    </header>
+    <div class="main-perfil">
+      <div class="left-perfil">
+        <div class="card-perfil">
+          <img
+            src="../Imagens/FotoPerfil.png"
+            class="perfil-img"
+            alt="Perfil"
+            id="profileImage"
+          />
+          <br />
+          <input type="file" id="file" accept="image/*"/>
+          <label for="profileimg" class="editar-img" onclick="changeImage()">ATUALIZAR IMAGEM</label>
+          <h2>Descrição</h2>
+          <br />
+          <textarea
+            name="descricao"
+            id="descricao"
+            cols="30"
+            rows="5"
+            placeholder="Redes sociais..."
+          ></textarea>
+          <br />
+          <button class="salvar-descricao-button" type="button" onclick="saveDescription()">ATUALIZAR DESCRIÇÃO</button>
+        </div>
+      </div>
+      <div class="rigth-perfil">
+        <div class="right-content">
+          <div class="dados-usuario">
+            <label for="nome">Atualizar nome:</label>
+            <input type="text" id="nome" name="nome" />
+            <label for="senha">Senha atual:</label>
+            <input type="password" id="senha" name="senha" />
+            <p>Sua senha deve conter:</p>
+            <ul>
+              <li>Pelo menos 8 caracteres</li>
+              <li>1 letra maiúscula</li>
+              <li>1 letra minúscula</li>
+              <li>1 número</li>
+            </ul>
+            <label for="confirmar-senha">Nova senha:</label>
+            <input type="password" id="confirmar-senha" name="confirmar-senha" />
+            <label for="data-nascimento">Atualizar data de nascimento:</label>
+            <input type="date" id="data-nascimento" name="data-nascimento" />
+            <button class="salvar-dados-button" type="button" onclick="updateUserData()">ATUALIZAR DADOS</button>
+          </div>
+          <br />
+          <div class="aboutme">
+            <h1>Sobre mim</h1>
+            <br />
+            <textarea
+              name="sobremim"
+              id="sobremim"
+              cols="30"
+              rows="10"
+              placeholder="Escreva um pouco sobre você (até 100 palavras)..."
+            ></textarea>
+            <button class="salvar-sobremim-button" type="button" onclick="updateAboutMe()">ATUALIZAR SOBRE MIM</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="editar-script.js"></script>
+    <footer>
+      <p>
+        Desenvolvido por Ana Beatriz Maciel, Brenda Beatriz Cristaldo e Thaisse
+        Kirian Veiga. Alunas de Engenharia de Software na UTFPR-CP - 2024
+      </p>
+    </footer>
+  </body>
+  </html>
