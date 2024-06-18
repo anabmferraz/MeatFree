@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="admin-styles.css" />
+    <link rel="stylesheet" href="../menu-lateral/menuLateral-styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+
+    <link rel="shortcut icon" href="../Imagens/icon.ico" type="image/x-icon" />
+    <link rel="icon" href="../Imagens/icon.ico" type="image/x-icon" />
+
+    <title>Admin</title>
+  </head>
+  <body>
+    <nav class="menuLateral">
+      <div class="expandir">
+        <i class="icon"> <span class="material-icons">menu</span> </i>
+      </div>
+
+      <ul>
+        <li class="item-menu">
+          <a href="../perfil/perfil.html">
+            <span class="icon">
+              <span class="material-icons">person</span>
+            </span>
+            <span class="txt-link"> Perfil </span>
+          </a>
+        </li>
+
+        <li class="item-menu">
+          <a href="../menu/menu.html">
+            <span class="icon"> <span class="material-icons">home</span> </span>
+            <span class="txt-link"> Menu </span>
+          </a>
+        </li>
+
+        <li class="item-menu">
+          <a href="../index.html">
+            <span class="icon">
+              <span class="material-icons">restaurant</span>
+            </span>
+            <span class="txt-link"> Receitas </span>
+          </a>
+        </li>
+
+        <li class="item-menu">
+          <a href="../favoritos/favoritos.html">
+            <span class="icon">
+              <span class="material-icons">favorite</span>
+            </span>
+            <span class="txt-link"> Favoritos </span>
+          </a>
+        </li>
+
+        <li class="item-menu">
+          <a href="../login/login.html">
+            <span class="icon">
+              <span class="material-icons">logout</span>
+            </span>
+            <span class="txt-link"> Sair </span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <header class="menu-header">
+      <h1>ADMIN</h1>
+      <img src="../Imagens/logo.png" class="logo" alt="Logo" />
+    </header>
+
+    <div class="container">
+        <form id="userForm">
+            <label for="user">Nome do Usuário:</label>
+            <input type="text" id="user" name="user" size="30" required>
+            
+            <br><br>
+            
+            <label for="email">Email:</label>
+			<input type="email" id="email" pattern="[^@\s]+@[^@\s]+" size="30" required>
+            
+            <br><br>
+            <button type="button" id="clearButton">Limpar</button>
+            <button type="submit" id="submitButton">Cadastrar</button>
+			<p><a href="../../index.html">Voltar</a></p>
+        </form>
+
+        <br>
+        
+        <div id="searchContainer">
+            <input type="text" id="search" placeholder="Pesquisar...">
+            <button type="button" id="searchButton">Pesquisar</button>
+            <button type="button" id="clearSearchButton">Limpar Pesquisa</button>
+
+            <ul id="userList">
+                <li class="userItem">
+                    <button type="button" class="deleteButton">Excluir</button>
+                </li>
+            </ul>
+            
+            <button type="button" id="clearAllButton">Excluir Todos</button>
+        </div>
+    </div>
+    <br /><br />
+    <script src="../admin/admin.js"></script>
+    <footer>
+      <p>
+        Desenvolvido por Ana Beatriz Maciel, Brenda Beatriz Cristaldo e Thaisse
+        Kirian Veiga. Alunas de Engenharia de Software na UTFPR-CP - 2024
+      </p>
+    </footer>
+  </body>
+</html>
