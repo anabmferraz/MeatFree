@@ -54,6 +54,10 @@ ul li.item-menu{
     transition: 1s;
 }
 
+ul li.ativo{
+    background-color: #c4d6a6 ;
+}
+
 /* demais simbolos do menu */
 ul li.item-menu a {
     color: white;
