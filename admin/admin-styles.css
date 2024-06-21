@@ -1,22 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap");
+
 body {
   width: 92%;
   margin-left: 55px;
   font-family: "Platypi", sans-serif;
   background-color: #eafacf;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   overflow-x: hidden;
 }
 
 .menu-header {
-  width: 103%;
+  width: 102%;
   height: 100px;
-  padding: 20px;
+  padding: 22px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #dce494;
 }
+
 .menu-header h1 {
   margin-left: 20px;
   font-weight: 700;
@@ -24,65 +26,104 @@ body {
 }
 
 .logo {
-  max-width: 200px;
+  max-width: 180px;
   height: auto;
   margin-left: auto;
 }
 
-.card-menu {
-  width: 400px;
-  margin: 50px auto;
-  padding: 40px 45px;
-  background: #dce494;
-  border-radius: 20px;
-  box-shadow: 0px 10px 40px #4d691b;
+.container {
+  margin: 20px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  box-sizing: border-box;
+  flex: 1;
+}
+
+form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  gap: 15px;
 }
 
-.menu {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  padding: 0;
+label {
+  font-weight: bold;
+  color: #4d691b;
 }
 
-.menu ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.menu li {
-  background-color: #8dc63f;
-  padding: 15px 30px;
-  margin: 10px 0;
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
   border-radius: 5px;
-  width: 250px;
-  transition: background-color 0.3s ease;
 }
-.menu li:hover {
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #dce494;
+  color: #fff;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  color: #4d691b;
+}
+
+button:hover {
   background-color: #6f9e31;
 }
 
-.menu li a {
-  text-decoration: none;
-  font-size: 17px;
-  color: black;
-  font-weight: bold;
+button:active {
+  background-color: #4d691b;
 }
+
+#search-container {
+  margin-top: 20px;
+}
+
+#userList {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+#userList li {
+  background-color: #dce494;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#userList button {
+  background-color: #d9534f;
+  color: white;
+}
+
+#userList button:hover {
+  background-color: #c9302c;
+}
+
+#userList button:active {
+  background-color: #ac2925;
+}
+
 footer {
-  width: 102%;
-  margin: 50px 0 -50px 0;
-  bottom: 0;
-  padding: 20px;
+  width: 100%;
+  margin-top: auto;
+  margin-left: 8px;
+  padding: 22px;
   background: #c4d6a6;
   color: black;
   font-size: 9pt;
-  bottom: 0;
+  box-sizing: border-box;
+  position: absolute;
 }
+
 footer p {
   margin: 0;
   text-align: center;
@@ -112,8 +153,4 @@ footer p {
 }
 
 @media only screen and (min-width: 1024px) {
-  .left-bebida,
-  .rigth-bebida {
-      width: 60%;
-  }
 }

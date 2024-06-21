@@ -82,36 +82,39 @@
     </header>
 
     <div class="container">
-        <form id="userForm">
-            <label for="user">Nome do Usuário:</label>
-            <input type="text" id="user" name="user" size="30" required>
-            
-            <br><br>
-            
-            <label for="email">Email:</label>
-			<input type="email" id="email" pattern="[^@\s]+@[^@\s]+" size="30" required>
-            
-            <br><br>
-            <button type="button" id="clearButton">Limpar</button>
-            <button type="submit" id="submitButton">Cadastrar</button>
-			<p><a href="../../index.html">Voltar</a></p>
-        </form>
+      <form id="userForm">
+        <label for="user">Nome do Usuário:</label>
+        <input type="text" id="user" name="user" size="30" required />
 
-        <br>
-        
-        <div id="searchContainer">
-            <input type="text" id="search" placeholder="Pesquisar...">
-            <button type="button" id="searchButton">Pesquisar</button>
-            <button type="button" id="clearSearchButton">Limpar Pesquisa</button>
+        <br /><br />
 
-            <ul id="userList">
-                <li class="userItem">
-                    <button type="button" class="deleteButton">Excluir</button>
-                </li>
-            </ul>
-            
-            <button type="button" id="clearAllButton">Excluir Todos</button>
-        </div>
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+          size="30"
+          required
+        />
+
+        <br /><br />
+        <button type="submit" id="submit-button">Cadastrar</button>
+      </form>
+
+      <br />
+
+      <div id="search-container">
+        <input type="text" id="search" placeholder="Pesquisar..." />
+        <button type="button" id="search-button">Pesquisar</button>
+        <button type="button" id="clear-button">Limpar Pesquisa</button>
+
+        <ul id="userList">
+          <li class="user-item"></li>
+          <button type="button" class="delete-button">Excluir</button>
+        </ul>
+
+        <button type="button" id="clear-button-all">Excluir Todos</button>
+      </div>
     </div>
     <br /><br />
     <script src="../admin/admin.js"></script>
