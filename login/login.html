@@ -40,6 +40,14 @@
         </div>
     </div>
 
+    <script>
+        document.getElementById('login-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Login realizado com sucesso!');
+            window.location.href = '/index.html';
+        });
+    </script>
+
     <footer>
         <p>Desenvolvido por Ana Beatriz Maciel, Brenda Beatriz Cristaldo e Thaisse Kirian Veiga.
             Alunas de Engenharia de Software na UTFPR-CP - 2024</p>
