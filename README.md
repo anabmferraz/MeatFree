@@ -1,5 +1,5 @@
 # MeatFree
-## ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+## ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
 - O projeto propõe a criação de um serviço web chamado Meat Free, que visa promover uma alimentação mais saudável, sustentável e compassiva. A plataforma permitirá aos usuários acessar e compartilhar receitas vegetarianas e veganas, obter orientações nutricionais de especialistas e conectar-se com uma comunidade de apoio. Ao incentivar a redução do consumo de carne, o projeto também busca contribuir para a saúde individual e o meio ambiente. 
 Em resumo, o projeto meat free oferece uma solução completa para os desafios relacionados à alimentação, saúde e sustentabilidade, além de auxiliar os interessados e os adeptos desse movimento a terem uma comunicação entre si, beneficiando tanto os indivíduos quanto o meio ambiente.
